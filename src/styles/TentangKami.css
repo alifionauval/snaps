@@ -1,0 +1,140 @@
+/* Mengatur container Tentang Kami */
+.tentang-kami-container {
+    text-align: center;
+    margin-top: 0; /* Menghilangkan jarak atas */
+    padding-top: 0; /* Menghilangkan padding atas */
+}
+
+/* Mengatur gambar agar menyatu dengan navbar */
+.team-image-container {
+    position: relative;
+    margin-top: -150px; /* Mengangkat gambar lebih tinggi agar lebih menyatu dengan navbar */
+    z-index: -1;
+}
+
+/* Mengatur ukuran gambar team */
+.team-image {
+    width: 100%;
+    max-width: 100%;
+    height: 80vh; /* Mengurangi tinggi gambar agar tidak terlalu panjang */
+    border-radius: 0;
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+/* Judul Tentang Kami dan Client Kami */
+.tentang-kami-title, .client-title {
+    font-size: 2.5em; /* Ukuran font yang sama untuk keduanya */
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #194c23; /* Warna yang sama */
+}
+
+/* Grid untuk konten Tentang Kami */
+.tentang-kami-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+/* Box di dalam Tentang Kami */
+.tentang-kami-box {
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian Client Kami */
+/* Bagian Client Kami */
+.client-section {
+    background-color: #f1f6ff;
+    padding: 2em 0;
+    margin-bottom: -15em; /* Memperbesar margin bawah agar background lebih panjang */
+    margin-top: 4em;
+    padding-bottom: 6em; /* Memperbesar padding bawah agar background terlihat lebih turun */
+}
+
+
+/* Container logo Client */
+.client-logo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Menambahkan layout grid untuk 4 kolom */
+    justify-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding-bottom: 15em;
+}
+
+/* Logo Client */
+.client-logo {
+    width: 250px; /* Lebar lebih besar */
+    height: 150px; /* Tinggi lebih besar */
+    object-fit: contain; /* Menjaga proporsi gambar */
+    transition: transform 0.3s;
+}
+
+/* Tambahkan efek hover */
+.client-logo:hover {
+    transform: scale(1.15); /* Efek membesar saat dihover */
+}
+
+
+/* Bagian Call to Action (CTA) */
+.cta-section {
+    background-color: #ffffff;
+    padding: 2em 0;
+    margin-bottom: 4em;
+}
+
+.cta-text {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font unik untuk gaya tulisan */
+    color: #194c23;
+}
+
+.cta-button {
+    background-color: #194c23;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #0f3818;
+    transition: background-color 0.3s;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .tentang-kami-content {
+        grid-template-columns: 1fr; /* Stack kolom di layar kecil */
+    }
+
+    .team-image {
+        max-width: 100%; /* Menyesuaikan ukuran gambar di layar kecil */
+    }
+
+    .client-logo-container {
+        grid-template-columns: repeat(2, 1fr); /* Mengubah layout ke 2 kolom di layar kecil */
+    }
+
+    .client-logo {
+        max-width: 200px; /* Ukuran logo disesuaikan untuk layar kecil */
+    }
+
+    .cta-text {
+        font-size: 1.5em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+    }
+}

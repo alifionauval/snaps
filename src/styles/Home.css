@@ -1,0 +1,251 @@
+/* Home.css */
+
+/* Menggunakan font DM Sans dan Gochi Hand */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85b940;
+  padding: 2em;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 80%;
+  color: white;
+}
+
+.center-logo {
+  width: 200px;
+  height: auto;
+  margin: 0 auto 1em auto;
+}
+
+.slogan {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.hero-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+/* Section Info untuk "Apa itu Event Organizer?" */
+.section-info {
+  padding: 1em 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-info h2 {
+  font-size: 2rem;
+  margin-bottom: 2em;
+  color: #194c23;
+}
+
+.info-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 65px;
+}
+
+.info-image {
+  width: 350px;
+  height: auto;
+  margin-right: 1em;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-bottom: 5em;
+}
+
+.info-text {
+  max-width: 700px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+/* Section Benefits untuk "Mengapa Harus d'snap!" */
+.section-benefits {
+  padding: 2em;
+  background-color: #f1f6ff;
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+.section-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  color: #194c23;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Kolom */
+  gap: 1.5em; /* Jarak antar item */
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.benefit-text {
+  text-align: left;
+}
+
+/* Section CTA */
+.cta-section {
+  background-color: #ffffff;
+  padding: 2em 0;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 3.5em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: black;
+}
+
+.cta-button {
+  background-color: #194c23;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #0f3818;
+  transition: background-color 0.3s;
+}
+
+/* Responsivitas untuk tampilan mobile */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-content {
+    max-width: 100%;
+    padding: 1em;
+  }
+  
+  .center-logo {
+    width: 150px; /* Ukuran logo lebih kecil */
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .slogan {
+    font-size: 2.5rem; /* Ukuran slogan lebih kecil */
+    margin-bottom: 0.5em;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+  }
+
+  /* Info Section */
+  .info-content {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .info-image {
+    width: 100%; /* Full width untuk tampilan mobile */
+    max-width: 350px;
+    margin-bottom: 2em;
+  }
+
+  .info-text {
+    text-align: center;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  /* Benefits Section */
+  .benefits-grid {
+    grid-template-columns: 1fr; /* Menjadi 1 kolom */
+  }
+
+  .benefit-item {
+    margin-bottom: 1.5em;
+  }
+}
+
+/* Responsivitas untuk tampilan tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    padding: 1.5em;
+  }
+
+  .center-logo {
+    width: 180px;
+  }
+
+  .slogan {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .info-content {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .info-image {
+    width: 100%; /* Full width */
+    max-width: 400px;
+  }
+
+  .info-text {
+    text-align: center;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+  }
+
+  .benefit-item {
+    margin-bottom: 1.5em;
+  }
+}

@@ -1,0 +1,40 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap'); /* Mengimpor font DM Sans */
+
+.navbar {
+    background-color: #194c23;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+.logo-img {
+    height: 50px; /* Sesuaikan ukuran logo */
+    width: auto;
+  }
+  
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif; /* Menggunakan font DM Sans */
+  }
+  
+.navbar-menu li {
+    font-size: 1.2rem;
+    font-weight: bold; /* Membuat teks bold */
+  }
+  
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+.navbar-menu a:hover {
+    color: #c0e218;
+  }

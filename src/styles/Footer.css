@@ -1,0 +1,86 @@
+.footer {
+  background-color: #194c23;
+  color: white;
+  padding: 2em;
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 100px; /* Adjust logo size */
+  margin-bottom: 0.5em;
+}
+
+.footer-info {
+  max-width: 300px;
+}
+
+.footer-info h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Styling untuk bagian Contact Us */
+.footer-contact {
+  font-size: 0.9rem; /* Mengatur ukuran font lebih kecil */
+}
+
+.footer-contact h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.2rem; /* Ukuran lebih kecil untuk judul Contact Us */
+}
+
+.footer-contact p {
+  font-size: 0.85rem; /* Ukuran lebih kecil untuk teks dalam paragraf */
+  margin: 0;
+  line-height: 1.5;
+  margin-bottom: 0.8em; /* Memberikan jarak antar paragraf di Contact Us */
+}
+
+/* Icon styling */
+.footer-icon {
+  width: 20px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+/* Link styling */
+.footer a {
+  color: white; /* Change link color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+  color: #85b940; /* Change link color on hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid white;
+  margin-top: 1em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  margin: 0;
+}

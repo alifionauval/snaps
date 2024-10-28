@@ -1,0 +1,173 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #85b940;
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+.projects-content {
+    max-width: 50%;
+    color: white;
+    padding-top: 6em;
+    margin: 0 auto;
+}
+
+.booth-image {
+    width: 30%;
+    height: auto;
+    margin-left: 2em;
+    margin-top: -50px;
+}
+
+.projects-slogan {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+.projects-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.5em;
+}
+
+.slider-section {
+    margin-top: 4em;
+    margin-bottom: -14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Pastikan latar belakang adalah putih */
+    padding: 2em;
+}
+
+.slick-slider {
+    width: 70%; /* Menjaga lebar slider */
+    margin: 0 auto;
+}
+
+.slider-image {
+    width: 100%;
+    height: 300px; /* Mengatur tinggi konsisten untuk semua gambar slider */
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover; /* Memastikan gambar memenuhi area tanpa merusak proporsi */
+}
+
+.slick-slide {
+    padding: 0 10px; /* Menjaga jarak antar gambar */
+}
+
+.slick-list {
+    margin: 0 -10px; /* Mengkompensasi padding agar slider tetap rapi */
+}
+
+/* Custom arrows */
+.custom-arrow {
+    font-size: 2rem;
+    color: #333;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang untuk panah */
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-arrow {
+    right: -50px; /* Sesuaikan posisi ke kanan gambar */
+}
+
+.prev-arrow {
+    left: -50px; /* Sesuaikan posisi ke kiri gambar */
+}
+
+.slick-prev, .slick-next {
+    display: none; /* Sembunyikan panah default */
+}
+
+/* Projects Grid */
+.projects-grid {
+    padding: 2em;
+    background-color: #f1f5f9;
+    margin-bottom: 2em;
+    padding-bottom: 5em;
+}
+
+.grid-title {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 4rem; /* Ukuran font untuk judul grid */
+    text-align: center;
+    margin-bottom: 1em;
+    color: #194c23;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mengubah menjadi 2 kolom */
+    gap: 2.5em; /* Jarak antara item */
+    justify-items: center;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 1em; /* Padding untuk item */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Meningkatkan max width untuk item grid */
+}
+
+.grid-item img {
+    width: 100%; /* Memastikan gambar mengisi item grid */
+    height: 300px; /* Meningkatkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa meregang */
+    border-radius: 8px;
+}
+
+.grid-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem; /* Ukuran font untuk deskripsi */
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap dengan transparansi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+.fullscreen-image {
+    max-width: 90%; /* Maksimal lebar gambar dalam fullscreen */
+    max-height: 90%; /* Maksimal tinggi gambar dalam fullscreen */
+    border-radius: 10px; /* Menambahkan border radius pada gambar */
+}
+
