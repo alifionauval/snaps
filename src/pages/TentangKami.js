@@ -11,13 +11,10 @@ import excelsoLogo from '../assets/excelso-logo.png';
 import gooddayLogo from '../assets/goodday-logo.png';
 import mandiriLogo from '../assets/mandiri-logo.png';
 import travelokaLogo from '../assets/traveloka-logo.png';
-import gopayLogo from '../assets/gopay-logo.png';
 import briLogo from '../assets/bri-logo.png';
 import bcaLogo from '../assets/bca-logo.png';
 import philipsLogo from '../assets/philips-logo.png';
 import abcLogo from '../assets/abc-logo.png';
-import hpLogo from '../assets/hp-logo.png';
-import bayerLogo from '../assets/bayer-logo.png';
 import eventSamsung from '../assets/event-samsung.png';
 import eventSamsung2 from '../assets/event-samsung-2.png';
 import eventSamsung3 from '../assets/event-samsung-3.png';
@@ -92,6 +89,19 @@ import eventGoodDay5 from '../assets/event-goodday-5.png';
 import eventGoodDay6 from '../assets/event-goodday-6.png';
 import eventGoodDay7 from '../assets/event-goodday-7.png';
 import eventMandiri1 from '../assets/event-mandiri-1.png';
+import eventTraveloka1 from '../assets/event-traveloka-1.png';
+import eventTraveloka2 from '../assets/event-traveloka-2.png';
+import eventBri1 from '../assets/event-bri-1.png'; // Gambar pertama
+import eventBri2 from '../assets/event-bri-2.png'; // Gambar kedua
+import eventBri3 from '../assets/event-bri-3.png';
+import eventBri4 from '../assets/event-bri-4.png';
+import eventBri5 from '../assets/event-bri-5.png';
+import eventBca1 from '../assets/event-bca-1.png'; // Gambar pertama
+import eventPhilips1 from '../assets/event-philips-1.png'; // Gambar pertama
+import eventPhilips2 from '../assets/event-philips-2.png'; // Gambar kedua
+import eventPhilips3 from '../assets/event-philips-3.png'; // Gambar kedua
+import eventABC1 from '../assets/event-abc-1.png'; // Gambar pertama
+import eventABC2 from '../assets/event-abc-2.png'; // Gambar kedua
 
 Modal.setAppElement('#root');
 
@@ -119,6 +129,21 @@ const TentangKami = () => {
   const [isMandiriModalOpen, setIsMandiriModalOpen] = useState(false);
   const [currentMandiriImageIndex, setCurrentMandiriImageIndex] = useState(0);
 
+  const [isTravelokaModalOpen, setIsTravelokaModalOpen] = useState(false);
+  const [currentTravelokaImageIndex, setCurrentTravelokaImageIndex] = useState(0);
+
+  const [isBriModalOpen, setIsBriModalOpen] = useState(false);
+  const [currentBriImageIndex, setCurrentBriImageIndex] = useState(0);
+
+  const [isBcaModalOpen, setIsBcaModalOpen] = useState(false);
+  const [currentBcaImageIndex, setCurrentBcaImageIndex] = useState(0);
+
+  const [isPhilipsModalOpen, setIsPhilipsModalOpen] = useState(false);
+  const [currentPhilipsImageIndex, setCurrentPhilipsImageIndex] = useState(0);
+
+  const [isABCModalOpen, setIsABCModalOpen] = useState(false);
+  const [currentABCImageIndex, setCurrentABCImageIndex] = useState(0);
+
 
   // Daftar gambar event Samsung
   const samsungEventImages = [eventSamsung, eventSamsung2, eventSamsung3, eventSamsung4, eventSamsung5, eventSamsung6, eventSamsung7, eventSamsung8, eventSamsung9, eventSamsung10, eventSamsung11, eventSamsung12, eventSamsung13, eventSamsung14, eventSamsung15, eventSamsung16, eventSamsung17, eventSamsung18, eventSamsung19, eventSamsung20, eventSamsung21, eventSamsung22, eventSamsung23, eventSamsung24, eventSamsung25, eventSamsung26, eventSamsung27, eventSamsung28, eventSamsung29, eventSamsung30, eventSamsung31,  eventSamsung32,  eventSamsung33,  eventSamsung34,  eventSamsung35,  eventSamsung36,  eventSamsung37,  eventSamsung38,   eventSamsung39,  eventSamsung40,  eventSamsung41,  eventSamsung42,  eventSamsung43,  eventSamsung44];
@@ -135,6 +160,16 @@ const TentangKami = () => {
   const goodDayEventImages = [eventGoodDay1, eventGoodDay2, eventGoodDay3, eventGoodDay4, eventGoodDay5, eventGoodDay6, eventGoodDay7]
 
   const mandiriEventImages = [eventMandiri1]
+
+  const travelokaEventImages = [eventTraveloka1, eventTraveloka2]  
+
+  const briEventImages = [eventBri1, eventBri2, eventBri3, eventBri3, eventBri4, eventBri5]
+
+  const bcaEventImages = [eventBca1]
+
+  const philipsEventImages = [eventPhilips1, eventPhilips2, eventPhilips3]; // Array gambar event Philips
+
+  const abcEventImages = [eventABC1, eventABC2]; // Array gambar event ABC
 
 
   // Fungsi membuka modal Samsung
@@ -286,6 +321,101 @@ const TentangKami = () => {
     );
   };
 
+  const openTravelokaModal = () => {
+    setCurrentTravelokaImageIndex(0);
+    setIsTravelokaModalOpen(true);
+  };
+  
+  const closeTravelokaModal = () => {
+    setIsTravelokaModalOpen(false);
+  };
+
+  const nextTravelokaImage = () => {
+    setCurrentTravelokaImageIndex((prevIndex) => (prevIndex + 1) % travelokaEventImages.length);
+  };
+  
+  const prevTravelokaImage = () => {
+    setCurrentTravelokaImageIndex(
+      (prevIndex) => (prevIndex - 1 + travelokaEventImages.length) % travelokaEventImages.length
+    );
+  };
+
+  const openBriModal = () => {
+    setCurrentBriImageIndex(0); // Mulai dari gambar pertama
+    setIsBriModalOpen(true);
+  };
+  
+  const closeBriModal = () => {
+    setIsBriModalOpen(false);
+  };
+
+  const nextBriImage = () => {
+    setCurrentBriImageIndex((prevIndex) => (prevIndex + 1) % briEventImages.length);
+  };
+  
+  const prevBriImage = () => {
+    setCurrentBriImageIndex(
+      (prevIndex) => (prevIndex - 1 + briEventImages.length) % briEventImages.length
+    );
+  };
+  
+  const openBcaModal = () => {
+    setCurrentBcaImageIndex(0); // Mulai dari gambar pertama
+    setIsBcaModalOpen(true);
+  };
+  
+  const closeBcaModal = () => {
+    setIsBcaModalOpen(false);
+  };
+
+  const nextBcaImage = () => {
+    setCurrentBcaImageIndex((prevIndex) => (prevIndex + 1) % bcaEventImages.length);
+  };
+  
+  const prevBcaImage = () => {
+    setCurrentBcaImageIndex(
+      (prevIndex) => (prevIndex - 1 + bcaEventImages.length) % bcaEventImages.length
+    );
+  };
+  
+  const openPhilipsModal = () => {
+    setCurrentPhilipsImageIndex(0); // Mulai dari gambar pertama
+    setIsPhilipsModalOpen(true);
+  };
+  
+  const closePhilipsModal = () => {
+    setIsPhilipsModalOpen(false);
+  };
+  
+  const nextPhilipsImage = () => {
+    setCurrentPhilipsImageIndex((prevIndex) => (prevIndex + 1) % philipsEventImages.length);
+  };
+  
+  const prevPhilipsImage = () => {
+    setCurrentPhilipsImageIndex(
+      (prevIndex) => (prevIndex - 1 + philipsEventImages.length) % philipsEventImages.length
+    );
+  };  
+  
+  const openABCModal = () => {
+    setCurrentABCImageIndex(0); // Mulai dari gambar pertama
+    setIsABCModalOpen(true);
+  };
+  
+  const closeABCModal = () => {
+    setIsABCModalOpen(false);
+  };
+
+  const nextABCImage = () => {
+    setCurrentABCImageIndex((prevIndex) => (prevIndex + 1) % abcEventImages.length);
+  };
+  
+  const prevABCImage = () => {
+    setCurrentABCImageIndex(
+      (prevIndex) => (prevIndex - 1 + abcEventImages.length) % abcEventImages.length
+    );
+  };
+  
   return (
     <div className="tentang-kami-container">
       {/* Bagian Tentang Kami */}
@@ -378,14 +508,36 @@ const TentangKami = () => {
           className="client-logo"
           onClick={openMandiriModal}
           />
-          <img src={travelokaLogo} alt="Traveloka" className="client-logo" />
-          <img src={gopayLogo} alt="Gopay" className="client-logo" />
-          <img src={briLogo} alt="BRI" className="client-logo" />
-          <img src={bcaLogo} alt="BCA Life" className="client-logo" />
-          <img src={philipsLogo} alt="PHILIPS" className="client-logo" />
-          <img src={abcLogo} alt="ABC" className="client-logo" />
-          <img src={hpLogo} alt="HP" className="client-logo" />
-          <img src={bayerLogo} alt="JD.ID" className="client-logo" />
+          <img
+          src={travelokaLogo}
+          alt="Traveloka"
+          className="client-logo"
+          onClick={openTravelokaModal}
+          />
+          <img
+          src={briLogo}
+          alt="BRI"
+          className="client-logo"
+          onClick={openBriModal}
+          />
+          <img
+          src={bcaLogo}
+          alt="BCA"
+          className="client-logo"
+          onClick={openBcaModal}
+          />
+          <img
+          src={philipsLogo}
+          alt="Philips"
+          className="client-logo"
+          onClick={openPhilipsModal}
+          />
+          <img
+          src={abcLogo}
+          alt="ABC"
+          className="client-logo"
+          onClick={openABCModal}
+          />
         </div>
       </section>
 
@@ -561,6 +713,131 @@ const TentangKami = () => {
       className="modal-image"
     />
     <button className="arrow right-arrow" onClick={nextMandiriImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isTravelokaModalOpen}
+  onRequestClose={closeTravelokaModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="Traveloka Event Image Modal"
+>
+  <button onClick={closeTravelokaModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevTravelokaImage}>
+      &#8249;
+    </button>
+    <img
+      src={travelokaEventImages[currentTravelokaImageIndex]}
+      alt="Traveloka Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextTravelokaImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isBriModalOpen}
+  onRequestClose={closeBriModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="BRI Event Image Modal"
+>
+  <button onClick={closeBriModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevBriImage}>
+      &#8249;
+    </button>
+    <img
+      src={briEventImages[currentBriImageIndex]}
+      alt="BRI Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextBriImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isBcaModalOpen}
+  onRequestClose={closeBcaModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="BCA Event Image Modal"
+>
+  <button onClick={closeBcaModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevBcaImage}>
+      &#8249;
+    </button>
+    <img
+      src={bcaEventImages[currentBcaImageIndex]}
+      alt="BCA Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextBcaImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isPhilipsModalOpen}
+  onRequestClose={closePhilipsModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="Philips Event Image Modal"
+>
+  <button onClick={closePhilipsModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevPhilipsImage}>
+      &#8249;
+    </button>
+    <img
+      src={philipsEventImages[currentPhilipsImageIndex]}
+      alt="Philips Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextPhilipsImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isABCModalOpen}
+  onRequestClose={closeABCModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="ABC Event Image Modal"
+>
+  <button onClick={closeABCModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevABCImage}>
+      &#8249;
+    </button>
+    <img
+      src={abcEventImages[currentABCImageIndex]}
+      alt="ABC Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextABCImage}>
       &#8250;
     </button>
   </div>
