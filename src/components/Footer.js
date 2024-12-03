@@ -9,14 +9,14 @@ const Footer = () => {
           <img src={require('../assets/logo.png')} alt="d'snap logo" className="footer-logo" />
           <div className="footer-info">
             <h4>PT. Snapsindo Tunggal Putra</h4>
-            <p>Jl. Yado I E No.12, RT.4/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12140</p>
+            <p>Jl. Yado I E No.12, RT.4/RW.4, Gandaria Utara, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Jakarta 12140</p>
           </div>
         </div>
         <div className="footer-contact">
           <h4>Contact Us</h4>
           <p>
             <img src={require('../assets/mail.png')} alt="Email icon" className="footer-icon" /> 
-            <a href="mailto:alf.nval24@gmail.com">alf.nval24@gmail.com</a>
+            <a href="mailto:agus@snapsindonesia.co.id">agus@snapsindonesia.co.id</a>
           </p>
           <p>
             <img src={require('../assets/instagram.png')} alt="Instagram icon" className="footer-icon" /> 

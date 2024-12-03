@@ -4,13 +4,13 @@ import '../styles/Projects.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import boothImage from '../assets/boothImage.png'; // Gambar booth
 import projectslide1 from '../assets/projectslide1.jpg'; // Gambar 1
 import projectslide2 from '../assets/projectslide2.jpg'; // Gambar 2
 import projectslide3 from '../assets/projectslide3.jpg'; // Gambar 3
 import projectslide4 from '../assets/projectslide4.jpg'; // Gambar 4
 import projectslide5 from '../assets/projectslide5.jpg'; 
 import projectslide6 from '../assets/projectslide6.jpg'; 
+import projectslide7 from '../assets/projectslide7.png'; 
 import bigproject1 from '../assets/bigproject1.jpg'; // Gambar grid project
 import bigproject2 from '../assets/bigproject2.jpg'; // Gambar grid project
 import bigproject3 from '../assets/bigproject3.jpg'; // Gambar grid project
@@ -44,7 +44,7 @@ const Projects = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3, // Default untuk desktop
         slidesToScroll: 1,
         centerMode: true,
         arrows: true,
@@ -54,6 +54,18 @@ const Projects = () => {
         autoplaySpeed: 500,
         centerPadding: '0px',
         focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 768, // Atur breakpoint sesuai kebutuhan
+                settings: {
+                    slidesToShow: 1, // Tampilkan 1 slide pada perangkat mobile
+                    slidesToScroll: 1,
+                    centerMode: false, // Nonaktifkan center mode untuk mobile
+                    centerPadding: '0px', // Hilangkan padding tengah
+                    infinite: true,
+                },
+            },
+        ],
     };
 
     const handleImageClick = (imageSrc) => {
@@ -81,18 +93,14 @@ const Projects = () => {
     return (
         <div>
             <header className="projects-section">
-                <div className="projects-content">
-                    <h1 className="projects-slogan">Explore Our Projects!</h1>
-                    <p className="projects-description">
-                        Kami bangga mempersembahkan berbagai proyek yang telah kami kerjakan. Setiap proyek merupakan cerminan dari dedikasi dan inovasi kami.
-                    </p>
-                </div>
-                <img 
-                    src={boothImage} 
-                    alt="Booth project" 
-                    className="booth-image" 
-                />
-            </header>
+    <img 
+        src={require('../assets/header-desktop-project.png')} 
+        alt="Header Project" 
+        style={{ width: '100%', height: 'auto' }} // Make the header image responsive
+    />
+    <div className="explore-text">EXPLORE OUR PROJECT!</div>
+</header>
+
 
             <section className="slider-section">
                 <Slider {...sliderSettings}>
@@ -114,11 +122,14 @@ const Projects = () => {
                     <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide6); }}>
                         <img src={projectslide6} alt="Project 6" className="slider-image" />
                     </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide7); }}>
+                        <img src={projectslide7} alt="Project 7" className="slider-image" />
+                    </div>
                 </Slider>
             </section>
 
             <section className="projects-grid">
-                <h2 className="grid-title">Our Big Projects</h2>
+                <h2 className="grid-title">Our Projects</h2>
                 <div className="grid-container">
                     <div className="grid-item" onClick={() => handleImageClick(bigproject1)}>
                         <img src={bigproject1} alt="International Launch Product Samsung" />
@@ -154,14 +165,14 @@ const Projects = () => {
             )}
 
             <section className="cta-section">
-        <h3 className="cta-text">Give Some Snaps To</h3>
-        <h4 className="cta-text">Your Brand !</h4>
-        <Link to="/kontak-kami"> {/* Link menuju halaman kontak */}
-          <button className="cta-button">Pesan Sekarang!</button>
-        </Link>
-      </section>
-    </div>
-  );
+                <h3 className="cta-text">Give Some Snaps To</h3>
+                <h4 className="cta-text">Your Brand !</h4>
+                <Link to="/kontak-kami"> {/* Link menuju halaman kontak */}
+                    <button className="cta-button">Pesan Sekarang!</button>
+                </Link>
+            </section>
+        </div>
+    );
 };
 
 export default Projects;

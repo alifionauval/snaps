@@ -32,12 +32,13 @@
 /* Grid untuk konten Tentang Kami */
 .tentang-kami-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
+    grid-template-columns: 1fr; /* Menjadikan grid satu kolom di mobile */
+    gap: 2.2em;
     margin-bottom: 2em;
     padding: 0 1em;
+    max-width: 1250px; /* Membatasi lebar maksimum */
+    margin: 0 auto; /* Menyentrakan grid di tengah */
 }
-
 /* Box di dalam Tentang Kami */
 .tentang-kami-box {
     background-color: #f9f9f9;
@@ -46,8 +47,100 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Bagian Client Kami */
-/* Bagian Client Kami */
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 95%; /* Lebar tetap */
+    max-width: 800px; /* Maksimal lebar modal */
+    height: auto; /* Biarkan tinggi menyesuaikan konten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: 5px solid white;
+    overflow: hidden; /* Hindari elemen keluar dari modal */
+}
+
+  
+  /* Gambar dalam modal */
+  .modal-image {
+    width: 100%; /* Gambar menyesuaikan lebar modal */
+    height: 500px; /* Tinggi tetap untuk konsistensi */
+    object-fit: cover; /* Memastikan gambar tetap proporsional tanpa merusak dimensi */
+    border-radius: 8px; /* Opsional: Tambahkan radius jika ingin gambar terlihat lebih halus */
+}
+  
+  .modal-close-button {
+    position: absolute;
+    top: 4px; /* Mengurangi jarak dari atas untuk membuat tombol lebih tinggi */
+    right: 5px; /* Menjaga posisi tombol tetap di sebelah kanan */
+    background-color: #f5f5f5; /* Warna latar tombol */
+    border: none; /* Menghapus border */
+    border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+    width: 50px; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    display: flex; /* Mengatur teks dalam tombol agar di tengah */
+    align-items: center; /* Memusatkan teks secara vertikal */
+    justify-content: center; /* Memusatkan teks secara horizontal */
+    font-size: 30px; /* Ukuran simbol close */
+    color: #333; /* Warna simbol close */
+    cursor: pointer; /* Menampilkan kursor pointer saat hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+  }
+  
+  .modal-close-button:hover {
+    background-color: #e0e0e0; /* Warna latar saat hover */
+    transform: scale(1.1); /* Efek zoom kecil */
+  }
+  
+  /* Tombol panah */
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Ubah posisi menjadi fixed untuk di luar modal */
+    z-index: 1100; /* Pastikan tombol berada di atas modal */
+}
+
+.left-arrow {
+    left: 250px; /* Posisi tombol panah kiri di luar modal */
+    top: 50%; /* Tempatkan di tengah secara vertikal */
+    transform: translateY(-50%); /* Menyesuaikan posisi vertikal */
+}
+
+.right-arrow {
+    right: 250px; /* Posisi tombol panah kanan di luar modal */
+    top: 50%; /* Tempatkan di tengah secara vertikal */
+    transform: translateY(-50%); /* Menyesuaikan posisi vertikal */
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Efek hover */
+    transform: scale(1.1); /* Efek zoom di tempat */
+    transform-origin: center; /* Titik asal zoom di tengah */
+}
+  
 .client-section {
     background-color: #f1f6ff;
     padding: 2em 0;
@@ -112,13 +205,69 @@
 }
 
 /* Responsif untuk layar kecil */
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
+
+    /* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+
+    .team-image-container {
+        margin-top: -300px; /* Mengangkat gambar lebih tinggi pada mobile */
+    }
+
     .tentang-kami-content {
-        grid-template-columns: 1fr; /* Stack kolom di layar kecil */
+        grid-template-columns: 1fr; /* Menjadikan grid satu kolom di mobile */
+        gap: 1em; /* Mengurangi jarak antar item */
+        padding: 0 1em; /* Menjaga padding pada sisi */
+        margin: 0 1em; /* Menambahkan margin pada sisi untuk memberi ruang */
+    }
+
+    .tentang-kami-box {
+        padding: 1em; /* Mengurangi padding dalam kotak */
+        font-size: 0.8em; /* Ukuran font lebih kecil */
+        margin: 1em 0; /* Memberi jarak antara kotak */
+        margin-top: -1.5em;
     }
 
     .team-image {
         max-width: 100%; /* Menyesuaikan ukuran gambar di layar kecil */
+    }
+
+    .modal {
+        width: 70%; /* Lebar modal lebih kecil di layar kecil */
+        max-width: 400px; /* Ukuran maksimal modal lebih kecil */
+    }
+    
+    .modal-image {
+        width: 100%; /* Gambar tetap responsif */
+        height: auto;
+    }
+
+    .modal-close-button {
+        top: 2px; /* Memberikan sedikit jarak lebih rendah dari atas untuk layar kecil */
+        right: 2px; /* Memberikan sedikit jarak dari sisi kanan untuk layar kecil */
+        width: 30px; /* Mengurangi ukuran tombol di mobile */
+        height: 30px; /* Mengurangi ukuran tombol di mobile */
+        font-size: 20px; /* Mengurangi ukuran font pada simbol close */
+      }
+
+      .modal-close-button:hover {
+        background-color: #e0e0e0; /* Warna latar saat hover */
+        transform: scale(1.1); /* Efek zoom kecil */
+      }
+
+      .arrow {
+        width: 40px; /* Ukuran tombol lebih kecil */
+        height: 40px; /* Ukuran tombol lebih kecil */
+        font-size: 24px; /* Ukuran font lebih kecil */
+    }
+
+    .left-arrow {
+        left: 10px; /* Posisi tombol kiri lebih dekat ke sisi kiri */
+    }
+
+    .right-arrow {
+        right: 10px; /* Posisi tombol kanan lebih dekat ke sisi kanan */
     }
 
     .client-logo-container {
@@ -126,7 +275,13 @@
     }
 
     .client-logo {
-        max-width: 200px; /* Ukuran logo disesuaikan untuk layar kecil */
+        width: 120px; /* Ukuran lebar lebih kecil untuk mobile */
+        height: 80px; /* Ukuran tinggi lebih kecil untuk mobile */
+        max-width: 100%; /* Pastikan logo tidak melebihi lebar container */
+    }
+
+    .client-section {
+        padding: 3em 0; /* Mengubah padding atas dan bawah menjadi lebih besar hanya di mobile */
     }
 
     .cta-text {
@@ -138,3 +293,5 @@
         padding: 0.8em 1.5em;
     }
 }
+}
+

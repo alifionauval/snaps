@@ -1,0 +1,170 @@
+/* KontakKami.css */
+
+/* Styling for light green section */
+.header-our-services {
+    position: relative;
+}
+
+.header-our-services img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-text {
+    position: absolute;
+    top: 14%;
+    left: 12%;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 4.5rem; /* Perbesar ukuran font */
+    color: #ffffff; /* Warna putih agar kontras dengan header */
+    text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+}
+
+
+/* Styling for white background contact section */
+.kontak-buttons {
+    background-color: #ffffff; /* White background */
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 2.7em;
+}
+
+.kontak-buttons h3 {
+    font-size: 3rem;
+    color: #194c23; /* Dark green color for header */
+    margin-bottom: 1.5em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 500px;
+    margin: 0 auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.button span {
+    flex: 1;
+    text-align: center;
+    padding-right: 3em;
+}
+
+/* Hover effect for button */
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button colors */
+.button.whatsapp {
+    background-color: #25d366;
+}
+
+.button.email {
+    background-color: #0078d4;
+}
+
+.button.instagram {
+    background-color: #c13584;
+}
+
+/* Mobile styling for screens up to 768px */
+@media (max-width: 768px) {
+    .header-our-services img {
+        content: url('../assets/header-our-services-mobile.png'); /* Ganti gambar untuk mobile */
+    }
+
+    .header-text {
+        position: absolute;
+        top: 7%;
+        left: 24%;
+        font-family: 'Gochi Hand', cursive;
+        font-size: 1.8rem; /* Perbesar ukuran font */
+        color: #ffffff; /* Warna putih agar kontras dengan header */
+        text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+    }
+
+    .kontak-kami {
+        padding: 4em 1em;
+    }
+
+    .kontak-kami h2 {
+        font-size: 2.5rem;
+    }
+
+    .kontak-kami p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .kontak-buttons {
+        padding: 1.5em 1em;
+    }
+
+    /* Modify font size for mobile */
+    .kontak-buttons h3 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .button-group {
+        gap: 1.5em;
+    }
+
+    /* Smaller button styling */
+    .button {
+        font-size: 1rem;
+        padding: 0.7em 1em;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .button img {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.5em;
+    }
+
+    .button span {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Hover effect for mobile */
+    .button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .button:active {
+        transform: scale(0.98);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+}

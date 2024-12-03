@@ -10,69 +10,77 @@ const Home = () => {
           <img src={require('../assets/logo.png')} alt="d'snap logo" className="center-logo" /> {/* Logo di atas */}
           <h1 className="slogan">Give Some Snaps To Your Brand!</h1>
           <p className="hero-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dan dolore magna aliqua.
+            It always seems impossible until it's done
+          </p>
+          <p classname="hero-description-2">
+            - Nelson Mandela
           </p>
         </div>
       </header>
 
       <section className="section-info">
-        <h2>d'snap! Pilihan Tepat Untuk Event Organizer</h2>
-        <div className="info-content">
-          <img src={require('../assets/person-image.jpg')} alt="Event Organizer" className="info-image" /> {/* Gambar orang */}
-          <div className="info-text">
-            <h3>Kelebihan Kami ?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore. </p>
-          </div>
-        </div>
+        <h2 className="best-choice-text">d'snap Is The Best Choice For Event Organizier !</h2>
       </section>
 
+      <section className="info-content">
+  <div className="info-image">
+    <img src={require('../assets/Brand.png')} alt="Our Philosophy" />
+  </div>
+  <div className="info-text">
+    <h3>Our Philosophy</h3>
+    <p>To attract and create the BUZZ and WOW factor to its targeted/potential market,
+    To make people pay attention and experience the brand, thus brand awareness that will long stay in consumer's mind, and
+    To awaken with the most efficient way and in a shortest possible time</p>
+  </div>
+</section>
+
+<section className="section-mission">
+  <div className="mission-image">
+    <img src={require('../assets/Idea.png')} alt="Our Mission" />
+  </div>
+  <div className="journey-content">
+    <h4>Our Mission</h4>
+    <p>
+      To be the leading Event Organizer in Indonesia with comprehensive knowledge of our client's brand that delivers the synergies of effective strategies, outstanding creative production, and exceptional service.
+    </p>
+  </div>
+</section>
+
+
       <section className="section-benefits">
-        <h2>Mengapa Harus d'snap!</h2>
-        <div className="benefits-grid">
-          <div className="benefit-item">
-            <img src={require('../assets/icon-intensive-program.png')} alt="Intensive Program Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>Intensive Program</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-          <div className="benefit-item">
-            <img src={require('../assets/icon-competent-trainer.png')} alt="Competent Trainer Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>Competent Trainer</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-          <div className="benefit-item">
-            <img src={require('../assets/icon-lms.png')} alt="Learning Management System Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>Learning Management System</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-          <div className="benefit-item">
-            <img src={require('../assets/icon-e-certificate.png')} alt="E-Certificate Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>E-Certificate</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-          <div className="benefit-item">
-            <img src={require('../assets/icon-job-connector.png')} alt="Job Connector Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>Job Connector</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-          <div className="benefit-item">
-            <img src={require('../assets/icon-installment-option.png')} alt="Installment Option Available Icon" className="benefit-icon"/>
-            <div className="benefit-text">
-              <h3>Installment Option Available</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <h2>Our Values</h2>
+  <div className="benefits-grid">
+    <div className="benefit-item">
+      <img src={require('../assets/Teamwork.png')} alt="Teamwork" className="benefit-icon"/>
+      <div className="benefit-text">
+        <h3>Teamwork</h3>
+        <p>In event/activation there is no success without teamwork. Therefore every division in our team holds high commitment towards grow effort.
+        We also work together with our clients as partners, which enabled us to understand the, products and services, their target market, their expectation and their goal.</p>
+      </div>
+    </div>
+    <div className="benefit-item">
+      <img src={require('../assets/TargetDriven.png')} alt="Target-Driven" className="benefit-icon"/>
+      <div className="benefit-text">
+        <h3>Target Driven</h3>
+        <p>Every project has its own goals to achieve. We always aim to make those goals a reality by creating marketing strategy that is practical and achievable. Each member of our team has the experience, professionalism, energy and drive to exceed targets.</p>
+      </div>
+    </div>
+    <div className="benefit-item">
+      <img src={require('../assets/Efficient.png')} alt="Efficient" className="benefit-icon"/>
+      <div className="benefit-text">
+        <h3>Efficient</h3>
+        <p> We always strive to understand what our client's needs to provide the best alternative solution for their communication strategy in the most cost efficient way, without reducing the impact we deliver to your potential audience.</p>
+      </div>
+    </div>
+    <div className="benefit-item">
+      <img src={require('../assets/Agility.png')} alt="Agility" className="benefit-icon"/>
+      <div className="benefit-text">
+        <h3>Agility</h3>
+        <p>We execute our works from a meticulous planning. But when encountered with opportunities and challenges we reach our potential by being flexible. That way we can respond to changes quickly to deliver what our client needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="cta-section">
         <h3 className="cta-text">Give Some Snaps To</h3>

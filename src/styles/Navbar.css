@@ -9,32 +9,76 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
-  }
-  
+    position: relative; /* Penting untuk dropdown */
+}
+
 .logo-img {
-    height: 50px; /* Sesuaikan ukuran logo */
+    height: 50px; /* Ukuran logo untuk desktop */
     width: auto;
-  }
-  
+}
+
+.navbar-burger {
+    display: none; /* Sembunyikan burger icon di desktop */
+    cursor: pointer; /* Ubah kursor saat hover */
+}
+
 .navbar-menu {
-    display: flex;
+    display: flex; /* Tampilkan menu di desktop */
     list-style: none;
     gap: 2em;
     margin: 0;
     font-family: 'DM Sans', sans-serif; /* Menggunakan font DM Sans */
-  }
-  
+}
+
 .navbar-menu li {
     font-size: 1.2rem;
     font-weight: bold; /* Membuat teks bold */
-  }
-  
+}
+
 .navbar-menu a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
-  }
-  
+}
+
 .navbar-menu a:hover {
     color: #c0e218;
-  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* Sesuaikan dengan breakpoint Anda */
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        left: 0; /* Menyebarkan menu ke full-width di mobile */
+        right: 0;
+        background-color: #194c23;
+        z-index: 1;
+        padding: 1em 1.5em; /* Padding agar ada jarak dari tepi layar */
+        max-height: 0; /* Awal disembunyikan dengan max-height 0 */
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease; /* Animasi smooth */
+    }
+
+    .navbar-menu.active {
+        max-height: 500px; /* Sesuaikan tinggi maksimal untuk tampilan penuh */
+        opacity: 1;
+    }
+
+    .navbar-burger {
+        display: block; /* Tampilkan burger icon di mobile */
+    }
+
+    .burger-icon {
+        height: 30px; /* Sesuaikan ukuran burger icon */
+    }
+
+    .logo-img {
+        height: 30px; /* Sesuaikan tinggi logo untuk mobile */
+        width: auto;
+    }
+}

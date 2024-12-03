@@ -1,7 +1,7 @@
 .footer {
   background-color: #194c23;
   color: white;
-  padding: 2em;
+  padding: 2em; /* Padding for desktop */
   text-align: left;
   font-family: 'DM Sans', sans-serif;
 }
@@ -19,7 +19,7 @@
 }
 
 .footer-logo {
-  width: 100px; /* Adjust logo size */
+  width: 100px; /* Logo size for desktop */
   margin-bottom: 0.5em;
 }
 
@@ -29,48 +29,48 @@
 
 .footer-info h4 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Heading size for desktop */
   margin-bottom: 0.5em;
 }
 
 .footer-info p {
-  font-size: 0.8rem;
+  font-size: 0.8rem; /* Paragraph size for desktop */
   line-height: 1.5;
   margin: 0;
 }
 
 /* Styling untuk bagian Contact Us */
 .footer-contact {
-  font-size: 0.9rem; /* Mengatur ukuran font lebih kecil */
+  font-size: 0.9rem; /* Font size for desktop */
 }
 
 .footer-contact h4 {
   margin-bottom: 0.5em;
-  font-size: 1.2rem; /* Ukuran lebih kecil untuk judul Contact Us */
+  font-size: 1.2rem; /* Title size for Contact Us on desktop */
 }
 
 .footer-contact p {
-  font-size: 0.85rem; /* Ukuran lebih kecil untuk teks dalam paragraf */
+  font-size: 0.85rem; /* Paragraph size for desktop */
   margin: 0;
   line-height: 1.5;
-  margin-bottom: 0.8em; /* Memberikan jarak antar paragraf di Contact Us */
+  margin-bottom: 0.8em; /* Spacing for paragraphs */
 }
 
 /* Icon styling */
 .footer-icon {
-  width: 20px;
+  width: 20px; /* Icon size for desktop */
   margin-right: 0.5em;
   vertical-align: middle;
 }
 
 /* Link styling */
 .footer a {
-  color: white; /* Change link color to white */
+  color: white; /* Link color for desktop */
   text-decoration: none; /* Remove underline */
 }
 
 .footer a:hover {
-  color: #85b940; /* Change link color on hover */
+  color: #85b940; /* Link hover color for desktop */
 }
 
 .footer-bottom {
@@ -81,6 +81,47 @@
 }
 
 .footer-bottom p {
-  font-size: 1rem;
+  font-size: 1rem; /* Footer bottom text size for desktop */
   margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1em; /* Reduced padding for mobile */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .footer-left {
+    margin-bottom: 1em; /* Space between sections */
+  }
+
+  .footer-logo {
+    width: 80px; /* Smaller logo size for mobile */
+  }
+
+  .footer-info h4 {
+    font-size: 1.2rem; /* Smaller heading size for mobile */
+  }
+
+  .footer-info p,
+  .footer-contact p {
+    font-size: 0.7rem; /* Smaller paragraph text for mobile */
+  }
+
+  .footer-contact h4 {
+    font-size: 1rem; /* Smaller title size for Contact Us on mobile */
+  }
+
+  .footer-icon {
+    width: 18px; /* Smaller icons for mobile */
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem; /* Smaller text in footer bottom for mobile */
+  }
 }

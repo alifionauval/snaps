@@ -1,5 +1,3 @@
-/* Home.css */
-
 /* Menggunakan font DM Sans dan Gochi Hand */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&display=swap');
 
@@ -13,9 +11,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #85b940;
+  background-image: url('../assets/Header_Dekstop.png'); /* Ganti dengan path gambar */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; /* Menempatkan gambar lebih ke bawah */
   padding: 2em;
   text-align: center;
+  padding-bottom: 8em;
 }
 
 .hero-content {
@@ -34,70 +36,130 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
 
 .hero-description {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 0.5em;
+  margin-top: -0.7em;
 }
 
-/* Section Info untuk "Apa itu Event Organizer?" */
+/* Bagian "Kelebihan Kami" */
 .section-info {
-  padding: 1em 0;
+  padding: 2em;
   background-color: #fff;
   text-align: center;
+  color: #194c23;
+  text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
 
 .section-info h2 {
-  font-size: 2rem;
-  margin-bottom: 2em;
-  color: #194c23;
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 1em;
 }
 
 .info-content {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-left: 65px;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }
 
-.info-image {
-  width: 350px;
+.info-image img {
+  width: 250px;
   height: auto;
-  margin-right: 1em;
-  margin-left: 50px;
-  border-radius: 10px;
-  margin-bottom: 5em;
+  border-radius: 15px;
 }
 
 .info-text {
-  max-width: 700px;
+  max-width: 600px;
   text-align: left;
-  margin-left: 50px;
+  color: #4a4e69;
+}
+
+.info-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: #194c23;
+}
+
+.info-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Bagian "Our Journey" */
+.best-choice-text {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 5em;
+  color: #194c23 !important; /* Warna hijau dengan !important */
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: -0.8em;
+}
+
+.section-mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background-color: #fff;
+  color: #194c23;
+  text-align: left;
+  margin-top: 2em; /* Tambahkan jarak di atas untuk memisahkan dari section sebelumnya */
+  flex-direction: row-reverse; /* Agar gambar ada di sebelah kanan */
+  padding-bottom: 5em;
+}
+
+.mission-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin-left: 2em; /* Jarak antara gambar dan teks */
+}
+
+.journey-content {
+  max-width: 600px;
+  color: #4a4e69;
+}
+
+.journey-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  text-align: left;
+  color: #194c23;
+}
+
+.journey-content p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Section Benefits untuk "Mengapa Harus d'snap!" */
 .section-benefits {
   padding: 2em;
-  background-color: #f1f6ff;
+  background-color: #85b940;
   text-align: center;
   padding-bottom: 6em;
+  margin-bottom: 2.5em;
 }
 
 .section-benefits h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5em;
-  color: #194c23;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 4em;
+  color: #fff !important; /* Warna hijau dengan !important */
+  text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Kolom */
+  display: flex; /* Ubah dari grid ke flexbox untuk tata letak vertikal */
+  flex-direction: column; /* Susun item secara vertikal */
+  align-items: center; /* Pusatkan item */
   gap: 1.5em; /* Jarak antar item */
 }
 
@@ -108,16 +170,29 @@ body {
   padding: 1.5em;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Sesuaikan lebar item */
 }
 
 .benefit-icon {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   margin-right: 1em;
 }
 
 .benefit-text {
   text-align: left;
+}
+
+.benefit-text h3 {
+  font-size: 1.5rem;
+  color: #194c23;
+  margin-bottom: 0.2em; /* Mengurangi jarak antara judul dan isi */
+}
+
+.benefit-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0; /* Menghilangkan jarak ekstra di atas teks deskripsi */
 }
 
 /* Section CTA */
@@ -126,6 +201,7 @@ body {
   padding: 2em 0;
   margin-bottom: 4em;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
 
 .cta-text {
@@ -146,6 +222,7 @@ body {
   font-size: 1.2em;
   display: inline-block;
   margin-top: 1em;
+  font-weight: bold;
 }
 
 .cta-button:hover {
@@ -156,96 +233,132 @@ body {
 /* Responsivitas untuk tampilan mobile */
 @media (max-width: 768px) {
   /* Hero Section */
+  .hero-section {
+    background-image: url('../assets/Header_Mobile.png'); /* Mobile image */
+    padding: 2em; /* Adjust padding for mobile if necessary */
+    padding-bottom: 50em; /* More space for mobile if needed */
+  }
+
   .hero-content {
     max-width: 100%;
-    padding: 1em;
+    padding: 0.5em;
   }
-  
+
   .center-logo {
-    width: 150px; /* Ukuran logo lebih kecil */
+    width: 130px; /* Adjust logo size */
     height: auto;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
   }
 
   .slogan {
-    font-size: 2.5rem; /* Ukuran slogan lebih kecil */
-    margin-bottom: 0.5em;
+    font-size: 2.5rem; /* Reduce slogan size */
   }
-
+  
   .hero-description {
-    font-size: 0.9rem;
-    margin-top: 0.5em;
+    font-size: 1rem; /* Reduce description size */
+  }
+  /* Info Section */
+
+  .section-info {
+    padding: 1em; /* Kecilkan padding untuk section info */
+    text-align: center; /* Pusatkan teks */
+    margin-top: -42em;
   }
 
-  /* Info Section */
   .info-content {
-    flex-direction: column;
-    text-align: center;
-    margin-left: 0;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
   }
 
   .info-image {
-    width: 100%; /* Full width untuk tampilan mobile */
-    max-width: 350px;
-    margin-bottom: 2em;
+    margin-bottom: -2em; /* Add space below the logo */
   }
 
+
   .info-text {
-    text-align: center;
-    margin-left: 0;
-    max-width: 100%;
+    text-align: center; /* Pusatkan teks untuk lebih baik */
+    max-width: 90%; /* Perlebar untuk tampilan mobile */
+    padding: 0 1em; /* Padding di kiri dan kanan */
+    font-size: 0.9rem; /* Ukuran font lebih kecil untuk teks */
+  }
+
+  .info-text h3 {
+    font-size: 1.4rem; /* Ukuran font heading lebih kecil */
+  }
+
+  .info-text p {
+    font-size: 0.9rem; /* Ukuran font paragraf lebih kecil */
+    margin-bottom: -2.2em;
+    padding: 0 2em;
   }
 
   /* Benefits Section */
   .benefits-grid {
-    grid-template-columns: 1fr; /* Menjadi 1 kolom */
+    flex-direction: column; /* Susun item secara vertikal */
+    align-items: center; /* Pusatkan item */
   }
 
   .benefit-item {
-    margin-bottom: 1.5em;
-  }
-}
-
-/* Responsivitas untuk tampilan tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero-section {
-    padding: 1.5em;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
   }
 
-  .center-logo {
-    width: 180px;
+  .benefit-icon {
+    margin-bottom: 0.5em; /* Space below the icon */
+    width: 90px; /* Adjust icon size for mobile */
+    height: 90px; /* Adjust icon size for mobile */
   }
 
-  .slogan {
-    font-size: 3rem;
+  .benefit-text {
+    max-width: 100%; /* Ensure full width for text */
+    text-align: center; /* Center text for mobile */
+    margin-top: -1.3em;
   }
 
-  .hero-description {
-    font-size: 0.95rem;
+  .benefit-text h3 {
+    text-align: center; /* Center the heading */
   }
 
-  .info-content {
-    flex-direction: column;
+
+  .cta-text {
+    font-size: 2.5em; /* Kecilkan ukuran font CTA */
+  }
+
+  .cta-button {
+    font-size: 1em; /* Kecilkan ukuran font pada tombol */
+    padding: 0.8em 1.5em; /* Kecilkan padding tombol */
+  }
+
+  .section-mission {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 2em; /* Optional padding */
+    margin-top: 2em; /* Add margin for spacing */
+  }
+
+  .mission-image {
+    margin-bottom: 1em; /* Space below the image */
+  }
+
+  .journey-content {
+    text-align: right; /* Align text to the right */
+    margin-left: auto; /* Push content to the right */
+    margin-right: 0; /* Optional: reset right margin */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .journey-content h4 {
+    font-size: 1.5rem; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
     text-align: center;
-    margin-left: 0;
-  }
+  }  
 
-  .info-image {
-    width: 100%; /* Full width */
-    max-width: 400px;
-  }
-
-  .info-text {
+  .journey-content p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    line-height: 1.5; /* Adjust line height */
     text-align: center;
-    margin-left: 0;
-    max-width: 100%;
-  }
-
-  .benefits-grid {
-    grid-template-columns: 1fr 1fr; /* 2 kolom */
-  }
-
-  .benefit-item {
-    margin-bottom: 1.5em;
   }
 }

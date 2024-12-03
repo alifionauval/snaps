@@ -5,12 +5,27 @@ body {
 }
 
 .projects-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #85b940;
-    padding: 0.5em 2em;
-    text-align: center;
+    width: 100%; /* Ensures the section takes full width */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    position: relative; /* Ensures positioning context */
+}
+
+.explore-text {
+    position: absolute; /* Position it absolutely within the header */
+    left: 120px; /* Move to the right */
+    top: 120px; /* Move down */
+    font-family: 'Gochi Hand', cursive; /* Use the imported font */
+    font-size: 72px; /* Keep the text size large */
+    color: white; /* Change color based on your background */
+    z-index: 1; /* Ensure it appears above other elements */
+    text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6); /* Optional shadow for better visibility */
+}
+
+.projects-section img {
+    width: 100%; /* Ensures the image takes full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any gap below the image */
 }
 
 .projects-content {
@@ -59,11 +74,12 @@ body {
 
 .slider-image {
     width: 100%;
-    height: 300px; /* Mengatur tinggi konsisten untuk semua gambar slider */
+    height: 300px;
     display: block;
     border-radius: 10px;
     cursor: pointer;
-    object-fit: cover; /* Memastikan gambar memenuhi area tanpa merusak proporsi */
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out; /* Menambahkan transisi */
 }
 
 .slick-slide {
@@ -108,7 +124,7 @@ body {
 /* Projects Grid */
 .projects-grid {
     padding: 2em;
-    background-color: #f1f5f9;
+    background-color: #f1f6ff;
     margin-bottom: 2em;
     padding-bottom: 5em;
 }
@@ -171,3 +187,97 @@ body {
     border-radius: 10px; /* Menambahkan border radius pada gambar */
 }
 
+/* Responsivitas untuk tampilan mobile */
+@media (max-width: 768px) {
+    /* Projects Section */
+    body {
+        font-family: 'DM Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects-section {
+        background-image: url('../assets/header-project-mobile.png'); /* Gunakan gambar sebagai background */
+        background-size: cover; /* Sesuaikan agar background menutupi seluruh area */
+        background-position: center; /* Posisikan di tengah */
+        height: 300px; /* Atur tinggi sesuai kebutuhan */
+        position: relative; /* Atur positioning untuk konteks */
+    }
+
+    .projects-section img {
+        display: none; /* Sembunyikan gambar header di mobile */
+    }
+    
+    .explore-text {
+        position: absolute;
+        top: 25%; /* Tempatkan di tengah vertikal */
+        left: 50%; /* Tempatkan di tengah horizontal */
+        transform: translate(-50%, -50%);
+        font-family: 'Gochi Hand', cursive;
+        font-size: 36px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        white-space: nowrap;
+        z-index: 0; /* Turunkan z-index pada tampilan mobile */
+    }
+
+    /* Pastikan elemen dropdown memiliki z-index lebih tinggi */
+    .dropdown-menu {
+        z-index: 1;
+    }
+
+    .slider-section {
+        margin-top: 4em;
+        margin-bottom: -16em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; /* Past
+    }
+    
+    
+
+    .slider-image {
+        height: auto; /* Atur tinggi otomatis untuk tampilan mobile */
+        object-fit: contain; /* Atur gambar agar tetap proporsional */
+    }
+    /* Atur untuk menampilkan 1 gambar di tampilan mobile */
+    .slick-slide {
+        width: 100%; /* Set lebar slide 100% */
+        height: auto; /* Menjaga proporsi tinggi */
+    }
+
+     /* Projects Grid */
+     .projects-grid {
+        padding: 2em; /* Tambahkan padding lebih besar untuk area grid */
+        margin-bottom: 2em; /* Kecilkan margin bawah */
+    }
+    
+    .grid-title {
+        font-size: 2rem; /* Kecilkan ukuran font judul grid */
+        margin-bottom: 0.5em; /* Kurangi margin bawah */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Ubah menjadi 1 kolom pada mobile */
+        gap: 1em; /* Kecilkan jarak antar item */
+    }
+
+    .grid-item {
+        padding: 1em; /* Tambahkan padding di dalam kotak */
+        max-width: 90%; /* Ubah lebar maksimum item grid */
+        box-shadow: none; /* Menghilangkan bayangan untuk tampilan lebih ramping */
+        border-radius: 5px; /* Kecilkan radius sudut untuk tampilan lebih ramping */
+    }
+
+    .grid-item img {
+        height: 150px; /* Kecilkan tinggi gambar grid */
+        object-fit: cover; /* Memastikan gambar menutupi area tanpa meregang */
+    }
+
+    .grid-item p {
+        font-size: 0.8rem; /* Kecilkan ukuran font untuk deskripsi */
+        margin: 0.3em 0; /* Kecilkan margin atas dan bawah */
+    }
+}
