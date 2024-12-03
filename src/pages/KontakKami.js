@@ -12,7 +12,7 @@ const KontakKami = () => {
 
       {/* White background section for contact options */}
       <section className="kontak-buttons">
-        <h3>Tertarik Menggunakan Jasa Kami ?</h3>
+        <h3>Contact Us Here !</h3>
         <div className="button-group">
           <a href="https://wa.me/628128218017" target="_blank" rel="noopener noreferrer" className="button whatsapp">
             <img src={require('../assets/whatsapp2.png')} alt="WhatsApp icon" />

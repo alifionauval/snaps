@@ -423,7 +423,7 @@ const TentangKami = () => {
         <div className="team-image-container">
           <img src={teamImage} alt="Team Working" className="team-image" />
         </div>
-        <h2 className="tentang-kami-title">Tentang Kami</h2>
+        <h2 className="tentang-kami-title">About Us</h2>
         <div className="tentang-kami-content">
           <div className="tentang-kami-box">
             <p>
@@ -464,7 +464,8 @@ const TentangKami = () => {
 
       {/* Bagian Client Kami */}
       <section className="client-section">
-        <h2 className="client-title">Client Kami</h2>
+        <h2 className="client-title">Our Client</h2>
+        <h3 className="client-title2">Click Our Client Logo and See The Event !</h3>
         <div className="client-logo-container">
           <img
             src={samsungLogo}
@@ -849,7 +850,7 @@ const TentangKami = () => {
         <h3 className="cta-text">Give Some Snaps To</h3>
         <h4 className="cta-text">Your Brand !</h4>
         <Link to="/kontak-kami">
-          <button className="cta-button">Pesan Sekarang!</button>
+          <button className="cta-button">Contact Us !</button>
         </Link>
       </section>
     </div>

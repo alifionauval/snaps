@@ -98,7 +98,7 @@ const Projects = () => {
         alt="Header Project" 
         style={{ width: '100%', height: 'auto' }} // Make the header image responsive
     />
-    <div className="explore-text">EXPLORE OUR PROJECT!</div>
+    <div className="explore-text">EXPLORE OUR PROJECT !</div>
 </header>
 
 
@@ -168,7 +168,7 @@ const Projects = () => {
                 <h3 className="cta-text">Give Some Snaps To</h3>
                 <h4 className="cta-text">Your Brand !</h4>
                 <Link to="/kontak-kami"> {/* Link menuju halaman kontak */}
-                    <button className="cta-button">Pesan Sekarang!</button>
+                    <button className="cta-button">Contact Us !</button>
                 </Link>
             </section>
         </div>

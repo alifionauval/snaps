@@ -22,11 +22,31 @@
 }
 
 /* Judul Tentang Kami dan Client Kami */
-.tentang-kami-title, .client-title {
+.tentang-kami-title{
     font-size: 2.5em; /* Ukuran font yang sama untuk keduanya */
     font-weight: bold;
     margin-bottom: 1em;
     color: #194c23; /* Warna yang sama */
+}
+
+.client-title{
+    font-size: 4.5em; /* Ukuran font yang sama untuk keduanya */
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #194c23; /* Warna yang sama */
+    text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+    font-family: 'Gochi Hand', cursive;
+}
+
+.client-title2{
+    font-size: 2em; /* Ukuran font yang sama untuk keduanya */
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #194c23; /* Warna yang sama */
+    text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+    font-family: 'Gochi Hand', cursive;
+    margin-top: -1.5em;
+    margin-bottom: 2em;
 }
 
 /* Grid untuk konten Tentang Kami */
