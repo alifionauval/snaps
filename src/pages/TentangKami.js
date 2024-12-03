@@ -8,7 +8,6 @@ import kapalApiLogo from '../assets/kapal-api-logo.png';
 import kanzlerLogo from '../assets/kanzler-logo.png';
 import imploraLogo from '../assets/implora-logo.png';
 import excelsoLogo from '../assets/excelso-logo.png';
-import fujifilmLogo from '../assets/fujifilm-logo.png';
 import gooddayLogo from '../assets/goodday-logo.png';
 import mandiriLogo from '../assets/mandiri-logo.png';
 import travelokaLogo from '../assets/traveloka-logo.png';
@@ -85,6 +84,14 @@ import eventExcelso4 from '../assets/event-excelso-4.png';
 import eventExcelso5 from '../assets/event-excelso-5.png';
 import eventExcelso6 from '../assets/event-excelso-6.png';
 import eventExcelso7 from '../assets/event-excelso-7.png';
+import eventGoodDay1 from '../assets/event-goodday-1.png';
+import eventGoodDay2 from '../assets/event-goodday-2.png';
+import eventGoodDay3 from '../assets/event-goodday-3.png';
+import eventGoodDay4 from '../assets/event-goodday-4.png';
+import eventGoodDay5 from '../assets/event-goodday-5.png';
+import eventGoodDay6 from '../assets/event-goodday-6.png';
+import eventGoodDay7 from '../assets/event-goodday-7.png';
+import eventMandiri1 from '../assets/event-mandiri-1.png';
 
 Modal.setAppElement('#root');
 
@@ -106,6 +113,13 @@ const TentangKami = () => {
   const [isExcelsoModalOpen, setIsExcelsoModalOpen] = useState(false);
   const [currentExcelsoImageIndex, setCurrentExcelsoImageIndex] = useState(0);
 
+  const [isGoodDayModalOpen, setIsGoodDayModalOpen] = useState(false);
+  const [currentGoodDayImageIndex, setCurrentGoodDayImageIndex] = useState(0);
+
+  const [isMandiriModalOpen, setIsMandiriModalOpen] = useState(false);
+  const [currentMandiriImageIndex, setCurrentMandiriImageIndex] = useState(0);
+
+
   // Daftar gambar event Samsung
   const samsungEventImages = [eventSamsung, eventSamsung2, eventSamsung3, eventSamsung4, eventSamsung5, eventSamsung6, eventSamsung7, eventSamsung8, eventSamsung9, eventSamsung10, eventSamsung11, eventSamsung12, eventSamsung13, eventSamsung14, eventSamsung15, eventSamsung16, eventSamsung17, eventSamsung18, eventSamsung19, eventSamsung20, eventSamsung21, eventSamsung22, eventSamsung23, eventSamsung24, eventSamsung25, eventSamsung26, eventSamsung27, eventSamsung28, eventSamsung29, eventSamsung30, eventSamsung31,  eventSamsung32,  eventSamsung33,  eventSamsung34,  eventSamsung35,  eventSamsung36,  eventSamsung37,  eventSamsung38,   eventSamsung39,  eventSamsung40,  eventSamsung41,  eventSamsung42,  eventSamsung43,  eventSamsung44];
   
@@ -117,6 +131,11 @@ const TentangKami = () => {
   const imploraEventImages = [eventImplora1]
 
   const excelsoEventImages = [eventExcelso1, eventExcelso2, eventExcelso3, eventExcelso4, eventExcelso5, eventExcelso6, eventExcelso7]
+
+  const goodDayEventImages = [eventGoodDay1, eventGoodDay2, eventGoodDay3, eventGoodDay4, eventGoodDay5, eventGoodDay6, eventGoodDay7]
+
+  const mandiriEventImages = [eventMandiri1]
+
 
   // Fungsi membuka modal Samsung
   const openSamsungModal = () => {
@@ -229,7 +248,44 @@ const TentangKami = () => {
     );
   };
   
+  const openGoodDayModal = () => {
+    setCurrentGoodDayImageIndex(0);
+    setIsGoodDayModalOpen(true);
+  };
   
+  const closeGoodDayModal = () => {
+    setIsGoodDayModalOpen(false);
+  };
+  
+  const nextGoodDayImage = () => {
+    setCurrentGoodDayImageIndex((prevIndex) => (prevIndex + 1) % goodDayEventImages.length);
+  };
+  
+  const prevGoodDayImage = () => {
+    setCurrentGoodDayImageIndex(
+      (prevIndex) => (prevIndex - 1 + goodDayEventImages.length) % goodDayEventImages.length
+    );
+  };  
+  
+  const openMandiriModal = () => {
+    setCurrentMandiriImageIndex(0);
+    setIsMandiriModalOpen(true);
+  };
+  
+  const closeMandiriModal = () => {
+    setIsMandiriModalOpen(false);
+  };
+  
+  const nextMandiriImage = () => {
+    setCurrentMandiriImageIndex((prevIndex) => (prevIndex + 1) % mandiriEventImages.length);
+  };
+  
+  const prevMandiriImage = () => {
+    setCurrentMandiriImageIndex(
+      (prevIndex) => (prevIndex - 1 + mandiriEventImages.length) % mandiriEventImages.length
+    );
+  };
+
   return (
     <div className="tentang-kami-container">
       {/* Bagian Tentang Kami */}
@@ -310,10 +366,18 @@ const TentangKami = () => {
           className="client-logo"
           onClick={openExcelsoModal}
           />
-
-          <img src={fujifilmLogo} alt="Fujifilm" className="client-logo" />
-          <img src={gooddayLogo} alt="Good Day" className="client-logo" />
-          <img src={mandiriLogo} alt="Mandiri" className="client-logo" />
+          <img
+          src={gooddayLogo}
+          alt="Good Day"
+          className="client-logo"
+          onClick={openGoodDayModal}
+          />
+          <img
+          src={mandiriLogo}
+          alt="Mandiri"
+          className="client-logo"
+          onClick={openMandiriModal}
+          />
           <img src={travelokaLogo} alt="Traveloka" className="client-logo" />
           <img src={gopayLogo} alt="Gopay" className="client-logo" />
           <img src={briLogo} alt="BRI" className="client-logo" />
@@ -452,7 +516,57 @@ const TentangKami = () => {
   </div>
 </Modal>
 
-      
+<Modal
+  isOpen={isGoodDayModalOpen}
+  onRequestClose={closeGoodDayModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="Good Day Event Image Modal"
+>
+  <button onClick={closeGoodDayModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevGoodDayImage}>
+      &#8249;
+    </button>
+    <img
+      src={goodDayEventImages[currentGoodDayImageIndex]}
+      alt="Good Day Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextGoodDayImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+<Modal
+  isOpen={isMandiriModalOpen}
+  onRequestClose={closeMandiriModal}
+  className="modal"
+  overlayClassName="modal-overlay"
+  contentLabel="Mandiri Event Image Modal"
+>
+  <button onClick={closeMandiriModal} className="modal-close-button">
+    &times;
+  </button>
+  <div className="modal-content">
+    <button className="arrow left-arrow" onClick={prevMandiriImage}>
+      &#8249;
+    </button>
+    <img
+      src={mandiriEventImages[currentMandiriImageIndex]}
+      alt="Mandiri Event"
+      className="modal-image"
+    />
+    <button className="arrow right-arrow" onClick={nextMandiriImage}>
+      &#8250;
+    </button>
+  </div>
+</Modal>
+
+
       {/* Bagian CTA */}
       <section className="cta-section">
         <h3 className="cta-text">Give Some Snaps To</h3>
