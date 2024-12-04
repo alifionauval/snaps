@@ -231,6 +231,29 @@
     /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
 
+    .client-title {
+        font-size: 2.5em; /* Ukuran font lebih kecil dari desktop */
+        font-weight: bold;
+        color: #194c23;
+        text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+        font-family: 'Gochi Hand', cursive;
+        margin-bottom: 0.5em; /* Jarak bawah lebih kecil */
+        text-align: center; /* Memastikan teks berada di tengah */
+    }
+
+    /* Subjudul "CLICK OUR CLIENT" */
+    .client-title2 {
+        font-size: 1.8em; /* Ukuran font tetap */
+        font-weight: bold;
+        color: #194c23;
+        text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+        font-family: 'Gochi Hand', cursive;
+        margin-top: -0.5em; /* Menyesuaikan jarak atas */
+        margin-bottom: 1em; /* Jarak bawah tetap */
+        text-align: center; /* Teks di tengah */
+        padding: 0 1em; /* Tambahkan padding samping untuk memberikan ruang */
+    }
+    
     .team-image-container {
         margin-top: -300px; /* Mengangkat gambar lebih tinggi pada mobile */
     }
@@ -305,7 +328,8 @@
     }
 
     .cta-text {
-        font-size: 1.5em;
+        font-size: 2em;
+        font-family: 'Gochi Hand', cursive;
     }
 
     .cta-button {
