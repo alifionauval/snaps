@@ -19,7 +19,7 @@ import bigproject2 from '../assets/bigproject2.jpg'; // Gambar grid project
 import bigproject3 from '../assets/bigproject3.jpg'; // Gambar grid project
 import bigproject4 from '../assets/bigproject4.jpg'; // Gambar grid project
 import bigproject5 from '../assets/bigproject5.jpg'; // Gambar grid project
-import project6 from '../assets/project6.jpg'; // Gambar grid project
+import bigproject6 from '../assets/bigproject6.jpg'; // Gambar grid project
 
 // Custom arrow components for next and previous
 const NextArrow = (props) => {
@@ -144,28 +144,28 @@ const Projects = () => {
                 <h2 className="grid-title">Our Projects</h2>
                 <div className="grid-container">
                     <div className="grid-item" onClick={() => handleImageClick(bigproject1)}>
-                        <img src={bigproject1} alt="International Launch Product Samsung" />
-                        <p>International Launch Product Samsung</p>
+                        <img src={bigproject1} alt="International Launch Product SAMSUNG Z Fold6 | Z Flip6" />
+                        <p>International Launch Product SAMSUNG Z Fold6 | Z Flip6</p>
                     </div>
                     <div className="grid-item" onClick={() => handleImageClick(bigproject2)}>
-                        <img src={bigproject2} alt="Kapal Api PRJ" />
-                        <p>Kapal Api PRJ</p>
+                        <img src={bigproject2} alt="Kapal Api Pekan Raya Jakarta" />
+                        <p>Kapal Api Pekan Raya Jakarta</p>
                     </div>
                     <div className="grid-item" onClick={() => handleImageClick(bigproject3)}>
-                        <img src={bigproject3} alt="Samsung Flip Fold 4" />
-                        <p>Samsung Flip Fold 4</p>
+                        <img src={bigproject3} alt="KANZLER x We The Fest" />
+                        <p>KANZLER x We The Fest</p>
                     </div>
                     <div className="grid-item" onClick={() => handleImageClick(bigproject4)}>
-                        <img src={bigproject4} alt="Head In The Clouds" />
-                        <p>Head In The Clouds</p>
+                        <img src={bigproject4} alt="SAMSUNG Galaxy S24 Series x ENHYPEN" />
+                        <p>SAMSUNG Galaxy S24 Series x ENHYPEN</p>
                     </div>
                     <div className="grid-item" onClick={() => handleImageClick(bigproject5)}>
-                        <img src={bigproject5} alt="S23 Galaxy Studion Pakuwon Mall" />
-                        <p>S23 Galaxy Studio Pakuwon Mall</p>
+                        <img src={bigproject5} alt="SAMSUNG Head In The Clouds" />
+                        <p>SAMSUNG Head In The Clouds</p>
                     </div>
-                    <div className="grid-item" onClick={() => handleImageClick(project6)}>
-                        <img src={project6} alt="Enhypen" />
-                        <p>Enhypen</p>
+                    <div className="grid-item" onClick={() => handleImageClick(bigproject6)}>
+                        <img src={bigproject6} alt="SAMSUNG Galaxy S23 Studio Grand Indonesia" />
+                        <p>SAMSUNG Galaxy S23 Studio Grand Indonesia</p>
                     </div>
                 </div>
             </section>

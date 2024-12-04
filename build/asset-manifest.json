@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e603e507.css",
-    "main.js": "/static/js/main.f520e4e0.js",
+    "main.css": "/static/css/main.48c8e20d.css",
+    "main.js": "/static/js/main.7608dfe2.js",
     "static/js/453.7cc6f8de.chunk.js": "/static/js/453.7cc6f8de.chunk.js",
     "static/media/Header_AboutUs.png": "/static/media/Header_AboutUs.0cf4974ee10bef3d4b92.png",
     "static/media/projectslide5.jpg": "/static/media/projectslide5.4ca03e4c7b9e21b0a19b.jpg",
+    "static/media/projectslide9.jpg": "/static/media/projectslide9.c4e8c3c1d04805db08e8.jpg",
     "static/media/bigproject5.jpg": "/static/media/bigproject5.d78eaa0c517cf030c1a0.jpg",
     "static/media/projectslide3.jpg": "/static/media/projectslide3.e3ec01f2f3bafd13043b.jpg",
     "static/media/projectslide6.jpg": "/static/media/projectslide6.139a213ce8c8e3998934.jpg",
     "static/media/projectslide1.jpg": "/static/media/projectslide1.667d183004023f56529d.jpg",
+    "static/media/projectslide8.jpg": "/static/media/projectslide8.0af371d65e5288d86c46.jpg",
     "static/media/event-bri-2.png": "/static/media/event-bri-2.256e98bc3e40cd708c1d.png",
+    "static/media/projectslide10.jpg": "/static/media/projectslide10.b34782a3596ae80df2c8.jpg",
     "static/media/event-bri-3.png": "/static/media/event-bri-3.849c62d9f8db7b5e2de0.png",
     "static/media/event-samsung-3.png": "/static/media/event-samsung-3.9bea9bad81c2f8eea210.png",
     "static/media/event-philips-3.png": "/static/media/event-philips-3.dae9ce2e1fcdb50f4af9.png",
@@ -137,12 +140,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.e603e507.css.map": "/static/css/main.e603e507.css.map",
-    "main.f520e4e0.js.map": "/static/js/main.f520e4e0.js.map",
+    "main.48c8e20d.css.map": "/static/css/main.48c8e20d.css.map",
+    "main.7608dfe2.js.map": "/static/js/main.7608dfe2.js.map",
     "453.7cc6f8de.chunk.js.map": "/static/js/453.7cc6f8de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e603e507.css",
-    "static/js/main.f520e4e0.js"
+    "static/css/main.48c8e20d.css",
+    "static/js/main.7608dfe2.js"
   ]
 }

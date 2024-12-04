@@ -107,7 +107,7 @@
         top: 7%;
         left: 20%;
         font-family: 'Gochi Hand', cursive;
-        font-size: 34px; /* Perbesar ukuran font */
+        font-size: 30px; /* Perbesar ukuran font */
         color: #ffffff; /* Warna putih agar kontras dengan header */
         text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
     }
