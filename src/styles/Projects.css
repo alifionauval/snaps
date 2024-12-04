@@ -218,9 +218,9 @@ body {
         left: 50%; /* Tempatkan di tengah horizontal */
         transform: translate(-50%, -50%);
         font-family: 'Gochi Hand', cursive;
-        font-size: 36px;
+        font-size: 34px;
         color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
         text-align: center;
         white-space: nowrap;
         z-index: 0; /* Turunkan z-index pada tampilan mobile */

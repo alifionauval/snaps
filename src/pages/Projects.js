@@ -11,6 +11,9 @@ import projectslide4 from '../assets/projectslide4.jpg'; // Gambar 4
 import projectslide5 from '../assets/projectslide5.jpg'; 
 import projectslide6 from '../assets/projectslide6.jpg'; 
 import projectslide7 from '../assets/projectslide7.png'; 
+import projectslide8 from '../assets/projectslide8.jpg'; 
+import projectslide9 from '../assets/projectslide9.jpg'; 
+import projectslide10 from '../assets/projectslide10.jpg'; 
 import bigproject1 from '../assets/bigproject1.jpg'; // Gambar grid project
 import bigproject2 from '../assets/bigproject2.jpg'; // Gambar grid project
 import bigproject3 from '../assets/bigproject3.jpg'; // Gambar grid project
@@ -51,7 +54,7 @@ const Projects = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         autoplay: true,
-        autoplaySpeed: 500,
+        autoplaySpeed: 350,
         centerPadding: '0px',
         focusOnSelect: true,
         responsive: [
@@ -124,6 +127,15 @@ const Projects = () => {
                     </div>
                     <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide7); }}>
                         <img src={projectslide7} alt="Project 7" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide8); }}>
+                        <img src={projectslide8} alt="Project 8" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide9); }}>
+                        <img src={projectslide9} alt="Project 9" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide10); }}>
+                        <img src={projectslide10} alt="Project 10" className="slider-image" />
                     </div>
                 </Slider>
             </section>
