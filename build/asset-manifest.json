@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.90d7c5f5.css",
-    "main.js": "/static/js/main.4fba1bea.js",
+    "main.js": "/static/js/main.7b17c368.js",
     "static/js/453.7cc6f8de.chunk.js": "/static/js/453.7cc6f8de.chunk.js",
     "static/media/bigproject3.jpg": "/static/media/bigproject3.8a778600b8fae493daae.jpg",
     "static/media/Header_AboutUs.png": "/static/media/Header_AboutUs.0cf4974ee10bef3d4b92.png",
     "static/media/projectslide5.jpg": "/static/media/projectslide5.4ca03e4c7b9e21b0a19b.jpg",
     "static/media/bigproject1.jpg": "/static/media/bigproject1.c4e8c3c1d04805db08e8.jpg",
     "static/media/projectslide9.jpg": "/static/media/projectslide9.c4e8c3c1d04805db08e8.jpg",
+    "static/media/projectslide14.jpg": "/static/media/projectslide14.c5dc5d930908a69c2229.jpg",
     "static/media/bigproject6.jpg": "/static/media/bigproject6.0f851f7754941f92f578.jpg",
     "static/media/projectslide3.jpg": "/static/media/projectslide3.e3ec01f2f3bafd13043b.jpg",
     "static/media/projectslide6.jpg": "/static/media/projectslide6.139a213ce8c8e3998934.jpg",
@@ -45,6 +46,7 @@
     "static/media/event-mandiri-1.png": "/static/media/event-mandiri-1.92ef98be0edcb67a8b70.png",
     "static/media/event-samsung-11.png": "/static/media/event-samsung-11.d3cbf3f5b91c5edd338b.png",
     "static/media/event-samsung-28.png": "/static/media/event-samsung-28.e396f488bfd3018ae8b2.png",
+    "static/media/projectslide12.png": "/static/media/projectslide12.83c245d784b9806327f0.png",
     "static/media/event-goodday-6.png": "/static/media/event-goodday-6.449192a145b6b08ea918.png",
     "static/media/event-samsung-4.png": "/static/media/event-samsung-4.341828d136ae268b4cc0.png",
     "static/media/event-traveloka-1.png": "/static/media/event-traveloka-1.e507a15bdf7b3036c36e.png",
@@ -67,6 +69,7 @@
     "static/media/event-goodday-5.png": "/static/media/event-goodday-5.2ff81638c016ffc1bb8e.png",
     "static/media/event-abc-1.png": "/static/media/event-abc-1.cdbeaa080e841d42adff.png",
     "static/media/event-samsung-14.png": "/static/media/event-samsung-14.6954922bc0d6fe83356b.png",
+    "static/media/projectslide11.jpg": "/static/media/projectslide11.883d9bade737c99fee36.jpg",
     "static/media/event-kapal-api-13.png": "/static/media/event-kapal-api-13.0fc7a05717286a7db633.png",
     "static/media/event-kapal-api-8.png": "/static/media/event-kapal-api-8.b0cf1ff8414aed865db7.png",
     "static/media/event-kapal-api.png": "/static/media/event-kapal-api.5cec29e0cc35e9f31c96.png",
@@ -79,6 +82,7 @@
     "static/media/event-goodday-4.png": "/static/media/event-goodday-4.4f3ddfb992e15a16c42e.png",
     "static/media/event-goodday-7.png": "/static/media/event-goodday-7.a1fe0534d150c3c41c67.png",
     "static/media/event-kapal-api-12.png": "/static/media/event-kapal-api-12.256d87f12165f1f5009d.png",
+    "static/media/projectslide13.png": "/static/media/projectslide13.d19dbceebf50ec68998e.png",
     "static/media/event-excelso-6.png": "/static/media/event-excelso-6.982b581aa57f8e1be373.png",
     "static/media/event-samsung-34.png": "/static/media/event-samsung-34.50b3423c2b6676a4b42f.png",
     "static/media/event-excelso-7.png": "/static/media/event-excelso-7.939ac66a6c363b7f4f61.png",
@@ -141,11 +145,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.90d7c5f5.css.map": "/static/css/main.90d7c5f5.css.map",
-    "main.4fba1bea.js.map": "/static/js/main.4fba1bea.js.map",
+    "main.7b17c368.js.map": "/static/js/main.7b17c368.js.map",
     "453.7cc6f8de.chunk.js.map": "/static/js/453.7cc6f8de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90d7c5f5.css",
-    "static/js/main.4fba1bea.js"
+    "static/js/main.7b17c368.js"
   ]
 }

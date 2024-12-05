@@ -51,25 +51,30 @@ const Projects = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Default untuk desktop
+        slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         autoplay: true,
-        autoplaySpeed: 250,
+        autoplaySpeed: 350, // Perlambat autoplay speed
         centerPadding: '0px',
         focusOnSelect: true,
         responsive: [
             {
-                breakpoint: 768, // Atur breakpoint sesuai kebutuhan
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1, // Tampilkan 1 slide pada perangkat mobile
+                    slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: false, // Nonaktifkan center mode untuk mobile
-                    centerPadding: '0px', // Hilangkan padding tengah
+                    centerMode: false,
+                    arrows: false, // Hilangkan arrow di mobile
+                    autoplay: true,
+                    autoplaySpeed: 2500,
                     infinite: true,
+                    adaptiveHeight: true, // Tambahkan ini
+                    variableWidth: false, // Tambahkan ini
+                    swipeToSlide: true, // Tambahkan ini untuk pengalaman swipe yang lebih baik
                 },
             },
         ],

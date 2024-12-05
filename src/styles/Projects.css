@@ -62,12 +62,21 @@ body {
 
 .slider-section {
     margin-top: 4em;
-    margin-bottom: -14em;
+    /* Ubah margin bottom menjadi positif untuk memberi jarak */
+    margin-bottom: 4em; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff; /* Pastikan latar belakang adalah putih */
+    background-color: #fff;
     padding: 2em;
+}
+
+/* Tambahkan padding top pada projects-grid untuk desktop */
+.projects-grid {
+    padding: 4em 2em 5em 2em; /* top right bottom left */
+    background-color: #f1f6ff;
+    margin-top: 2em; /* Tambahkan margin top */
+    margin-bottom: 2em;
 }
 
 .slick-slider {
@@ -232,26 +241,47 @@ body {
     }
 
     .slider-section {
-        margin-top: 4em;
-        margin-bottom: -16em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff; /* Past
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1em;
+        overflow: hidden;
+        width: 100%;
     }
-    
+
+
+    .slick-slider {
+        width: 100%;
+        margin: 0 auto;
+    }
     
 
     .slider-image {
-        height: auto; /* Atur tinggi otomatis untuk tampilan mobile */
-        object-fit: contain; /* Atur gambar agar tetap proporsional */
-    }
-    /* Atur untuk menampilkan 1 gambar di tampilan mobile */
-    .slick-slide {
-        width: 100%; /* Set lebar slide 100% */
-        height: auto; /* Menjaga proporsi tinggi */
+        width: 100% !important; /* Force width 100% */
+        height: 250px !important; /* Set fixed height */
+        object-fit: cover !important; /* Maintain aspect ratio while covering container */
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
     }
 
+
+    .slick-slide div {
+        width: 100%;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Mengatur container list slider */
+    .slick-list {
+        margin: 0;
+        padding: 0 !important;
+        overflow: hidden;
+        width: 100%;
+    }
+    
      /* Projects Grid */
      .projects-grid {
         padding: 2em; /* Tambahkan padding lebih besar untuk area grid */
