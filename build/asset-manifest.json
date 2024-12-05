@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.90d7c5f5.css",
-    "main.js": "/static/js/main.d34a82c7.js",
+    "main.js": "/static/js/main.4fba1bea.js",
     "static/js/453.7cc6f8de.chunk.js": "/static/js/453.7cc6f8de.chunk.js",
     "static/media/bigproject3.jpg": "/static/media/bigproject3.8a778600b8fae493daae.jpg",
     "static/media/Header_AboutUs.png": "/static/media/Header_AboutUs.0cf4974ee10bef3d4b92.png",
     "static/media/projectslide5.jpg": "/static/media/projectslide5.4ca03e4c7b9e21b0a19b.jpg",
     "static/media/bigproject1.jpg": "/static/media/bigproject1.c4e8c3c1d04805db08e8.jpg",
     "static/media/projectslide9.jpg": "/static/media/projectslide9.c4e8c3c1d04805db08e8.jpg",
+    "static/media/bigproject6.jpg": "/static/media/bigproject6.0f851f7754941f92f578.jpg",
     "static/media/projectslide3.jpg": "/static/media/projectslide3.e3ec01f2f3bafd13043b.jpg",
     "static/media/projectslide6.jpg": "/static/media/projectslide6.139a213ce8c8e3998934.jpg",
     "static/media/projectslide1.jpg": "/static/media/projectslide1.667d183004023f56529d.jpg",
@@ -95,7 +96,6 @@
     "static/media/event-samsung-39.png": "/static/media/event-samsung-39.bc24d8c3258e743464ed.png",
     "static/media/event-excelso-2.png": "/static/media/event-excelso-2.fbfde0a42e8121bfc704.png",
     "static/media/event-kapal-api-4.png": "/static/media/event-kapal-api-4.37e22522a81bb53ba19c.png",
-    "static/media/bigproject6.png": "/static/media/bigproject6.f9c0163e986a6827e2b0.png",
     "static/media/event-excelso-3.png": "/static/media/event-excelso-3.f9c0163e986a6827e2b0.png",
     "static/media/event-samsung-44.png": "/static/media/event-samsung-44.c9d51e803dba0104476d.png",
     "static/media/event-samsung-15.png": "/static/media/event-samsung-15.6e70bbc858f53d7d3269.png",
@@ -141,11 +141,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.90d7c5f5.css.map": "/static/css/main.90d7c5f5.css.map",
-    "main.d34a82c7.js.map": "/static/js/main.d34a82c7.js.map",
+    "main.4fba1bea.js.map": "/static/js/main.4fba1bea.js.map",
     "453.7cc6f8de.chunk.js.map": "/static/js/453.7cc6f8de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90d7c5f5.css",
-    "static/js/main.d34a82c7.js"
+    "static/js/main.4fba1bea.js"
   ]
 }

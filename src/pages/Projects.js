@@ -14,6 +14,10 @@ import projectslide7 from '../assets/projectslide7.png';
 import projectslide8 from '../assets/projectslide8.jpg'; 
 import projectslide9 from '../assets/projectslide9.jpg'; 
 import projectslide10 from '../assets/projectslide10.jpg'; 
+import projectslide11 from '../assets/projectslide11.jpg';
+import projectslide12 from '../assets/projectslide12.png';
+import projectslide13 from '../assets/projectslide13.png';
+import projectslide14 from '../assets/projectslide14.jpg';    
 import bigproject1 from '../assets/bigproject1.jpg'; // Gambar grid project
 import bigproject2 from '../assets/bigproject2.jpg'; // Gambar grid project
 import bigproject3 from '../assets/bigproject3.jpg'; // Gambar grid project
@@ -54,7 +58,7 @@ const Projects = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         autoplay: true,
-        autoplaySpeed: 350,
+        autoplaySpeed: 250,
         centerPadding: '0px',
         focusOnSelect: true,
         responsive: [
@@ -136,6 +140,18 @@ const Projects = () => {
                     </div>
                     <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide10); }}>
                         <img src={projectslide10} alt="Project 10" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide11); }}>
+                        <img src={projectslide11} alt="Project 11" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide12); }}>
+                        <img src={projectslide12} alt="Project 12" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide13); }}>
+                        <img src={projectslide13} alt="Project 13" className="slider-image" />
+                    </div>
+                    <div onClick={(e) => { e.stopPropagation(); handleImageClick(projectslide14); }}>
+                        <img src={projectslide14} alt="Project 14" className="slider-image" />
                     </div>
                 </Slider>
             </section>
