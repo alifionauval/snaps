@@ -19,7 +19,7 @@ import bigproject2 from '../assets/bigproject2.jpg'; // Gambar grid project
 import bigproject3 from '../assets/bigproject3.jpg'; // Gambar grid project
 import bigproject4 from '../assets/bigproject4.jpg'; // Gambar grid project
 import bigproject5 from '../assets/bigproject5.jpg'; // Gambar grid project
-import bigproject6 from '../assets/bigproject6.png'; // Gambar grid project
+import bigproject6 from '../assets/bigproject6.jpg'; // Gambar grid project
 
 // Custom arrow components for next and previous
 const NextArrow = (props) => {
