@@ -82,6 +82,7 @@ body {
 .slick-slider {
     width: 70%; /* Menjaga lebar slider */
     margin: 0 auto;
+    margin-bottom: -16em;
 }
 
 .slider-image {
