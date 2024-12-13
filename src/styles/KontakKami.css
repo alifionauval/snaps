@@ -14,9 +14,9 @@
 .header-text {
     position: absolute;
     top: 14%;
-    left: 12%;
-    font-family: 'Gochi Hand', cursive;
-    font-size: 4.5rem; /* Perbesar ukuran font */
+    left: 13%;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 4rem; /* Perbesar ukuran font */
     color: #ffffff; /* Warna putih agar kontras dengan header */
     text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
@@ -28,13 +28,14 @@
     text-align: center;
     padding: 2em 0;
     margin-bottom: 2.7em;
+    font-family: 'Poppins', sans-serif;
 }
 
 .kontak-buttons h3 {
     font-size: 3rem;
     color: #194c23; /* Dark green color for header */
     margin-bottom: 1.5em;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 .button-group {
@@ -105,8 +106,8 @@
     .header-text {
         position: absolute;
         top: 7%;
-        left: 20%;
-        font-family: 'Gochi Hand', cursive;
+        left: 17%;
+        font-family: 'Century Gothic', sans-serif;
         font-size: 30px; /* Perbesar ukuran font */
         color: #ffffff; /* Warna putih agar kontras dengan header */
         text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
@@ -127,6 +128,7 @@
 
     .kontak-buttons {
         padding: 1.5em 1em;
+        margin-top: -1.5em;
     }
 
     /* Modify font size for mobile */

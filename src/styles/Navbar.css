@@ -27,7 +27,7 @@
     list-style: none;
     gap: 2em;
     margin: 0;
-    font-family: 'DM Sans', sans-serif; /* Menggunakan font DM Sans */
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-menu li {

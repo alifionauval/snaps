@@ -16,13 +16,15 @@ body {
 
 .explore-text {
     position: absolute; /* Position it absolutely within the header */
-    left: 120px; /* Move to the right */
+    left: 150px; /* Move to the right */
     top: 120px; /* Move down */
-    font-family: 'Gochi Hand', cursive; /* Use the imported font */
+    font-family: 'Century Gothic', sans-serif;
     font-size: 72px; /* Keep the text size large */
     color: white; /* Change color based on your background */
     z-index: 1; /* Ensure it appears above other elements */
     text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6); /* Optional shadow for better visibility */
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 .projects-section img {
@@ -46,7 +48,7 @@ body {
 }
 
 .projects-slogan {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -143,11 +145,11 @@ body {
 }
 
 .grid-title {
-    font-family: 'Gochi Hand', cursive;
-    font-size: 4rem; /* Ukuran font untuk judul grid */
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 3.5rem; /* Ukuran font untuk judul grid */
     text-align: center;
     margin-bottom: 1em;
-    color: #194c23;
+    color: #004b23;
     text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
 }
 
@@ -166,6 +168,8 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px; /* Meningkatkan max width untuk item grid */
+    font-family: 'Poppins', sans-serif;
+    color: #004b23;
 }
 
 .grid-item img {
@@ -205,7 +209,7 @@ body {
 @media (max-width: 768px) {
     /* Projects Section */
     body {
-        font-family: 'DM Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -234,6 +238,7 @@ body {
         text-align: center;
         white-space: nowrap;
         z-index: 0; /* Turunkan z-index pada tampilan mobile */
+        font-family: 'Century Gothic', sans-serif;
     }
 
     /* Pastikan elemen dropdown memiliki z-index lebih tinggi */
@@ -291,12 +296,13 @@ body {
     
     .grid-title {
         font-size: 2rem; /* Kecilkan ukuran font judul grid */
-        margin-bottom: 0.5em; /* Kurangi margin bawah */
+        margin-bottom: 1em; /* Kurangi margin bawah */
+        margin-top: 0em;
     }
 
     .grid-container {
         grid-template-columns: repeat(1, 1fr); /* Ubah menjadi 1 kolom pada mobile */
-        gap: 1em; /* Kecilkan jarak antar item */
+        gap: 2em; /* Kecilkan jarak antar item */
     }
 
     .grid-item {

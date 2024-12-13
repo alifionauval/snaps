@@ -1,8 +1,9 @@
-/* Menggunakan font DM Sans dan Gochi Hand */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -32,35 +33,33 @@ body {
 }
 
 .slogan {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Century Gothic', sans-serif; /* Menggunakan font Century Gothic */
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 600; /* Menyesuaikan ketebalan font, bisa disesuaikan */
   margin-bottom: 0.5em;
   text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+  letter-spacing: 0.5px; /* Menambah sedikit jarak antar huruf agar tampil lebih rounded */
+  margin-top: 0.2em;
 }
 
+
 .hero-description {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   font-size: 1.3rem;
   line-height: 1.5;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: -0.7em;
+  margin-top: -0.1em;
 }
+
 
 /* Bagian "Kelebihan Kami" */
 .section-info {
   padding: 2em;
   background-color: #fff;
   text-align: center;
-  color: #194c23;
+  color: #004b23;
   text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
-}
-
-.section-info h2 {
-  font-size: 2.5rem;
-  color: #2b2d42;
-  margin-bottom: 1em;
 }
 
 .info-content {
@@ -79,13 +78,15 @@ body {
 .info-text {
   max-width: 600px;
   text-align: left;
-  color: #4a4e69;
+  color: #004b23;
+  font-family: 'Poppins', sans-serif;
 }
 
 .info-text h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
-  color: #194c23;
+  color: #004b23;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .info-text p {
@@ -95,9 +96,9 @@ body {
 
 /* Bagian "Our Journey" */
 .best-choice-text {
-  font-family: 'Gochi Hand', cursive;
-  font-size: 5em;
-  color: #194c23 !important; /* Warna hijau dengan !important */
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 2.5em;
+  color: #004b23 !important; /* Warna hijau dengan !important */
   text-align: center;
   margin-bottom: 1em;
   margin-top: -0.8em;
@@ -109,7 +110,7 @@ body {
   justify-content: center;
   padding: 2em;
   background-color: #fff;
-  color: #194c23;
+  color: #004b23;
   text-align: left;
   margin-top: 2em; /* Tambahkan jarak di atas untuk memisahkan dari section sebelumnya */
   flex-direction: row-reverse; /* Agar gambar ada di sebelah kanan */
@@ -125,14 +126,16 @@ body {
 
 .journey-content {
   max-width: 600px;
-  color: #4a4e69;
+  color: #004b23;
+  font-family: 'Poppins', sans-serif;
 }
 
 .journey-content h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
   text-align: left;
-  color: #194c23;
+  color: #004b23;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .journey-content p {
@@ -143,14 +146,14 @@ body {
 /* Section Benefits untuk "Mengapa Harus d'snap!" */
 .section-benefits {
   padding: 2em;
-  background-color: #85b940;
+  background-color: #87c13f;
   text-align: center;
   padding-bottom: 6em;
   margin-bottom: 2.5em;
 }
 
 .section-benefits h2 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Century Gothic', sans-serif;
   font-size: 4em;
   color: #fff !important; /* Warna hijau dengan !important */
   text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
@@ -181,12 +184,15 @@ body {
 
 .benefit-text {
   text-align: left;
+  color: #004b23;
+  font-family: 'Poppins', sans-serif;
 }
 
 .benefit-text h3 {
   font-size: 1.5rem;
-  color: #194c23;
+  color: #004b23;
   margin-bottom: 0.2em; /* Mengurangi jarak antara judul dan isi */
+  font-family: 'Poppins', sans-serif;
 }
 
 .benefit-text p {
@@ -202,18 +208,27 @@ body {
   margin-bottom: 4em;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
+  font-family: 'Poppins', sans-serif;
 }
 
 .cta-text {
   font-size: 3.5em;
   margin-bottom: 1em;
   margin-top: 0.5em;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: black;
+  font-family: 'Poppins', sans-serif;
+  color: #ffed00;
+}
+
+.cta-text h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-text h4 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .cta-button {
-  background-color: #194c23;
+  background-color: #004b23;
   color: white;
   padding: 1em 2em;
   border: none;
@@ -223,10 +238,11 @@ body {
   display: inline-block;
   margin-top: 1em;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .cta-button:hover {
-  background-color: #0f3818;
+  background-color: #004b23;
   transition: background-color 0.3s;
 }
 
@@ -251,7 +267,7 @@ body {
   }
 
   .slogan {
-    font-size: 2.5rem; /* Reduce slogan size */
+    font-size: 2rem; /* Reduce slogan size */
   }
   
   .hero-description {
@@ -260,10 +276,15 @@ body {
   /* Info Section */
 
   .section-info {
-    padding: 1em; /* Kecilkan padding untuk section info */
+    padding: 0.5em; /* Kecilkan padding untuk section info */
     text-align: center; /* Pusatkan teks */
     margin-top: -42em;
   }
+
+  .best-choice-text {
+    font-size: 1.5rem; /* Adjust font size to be smaller */
+  }
+  
 
   .info-content {
     flex-direction: column; /* Change to column layout */
@@ -275,6 +296,9 @@ body {
     margin-bottom: -2em; /* Add space below the logo */
   }
 
+  .section-benefits h2 {
+    font-size: 2.8em;
+  }
 
   .info-text {
     text-align: center; /* Pusatkan teks untuk lebih baik */

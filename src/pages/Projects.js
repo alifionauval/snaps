@@ -110,7 +110,7 @@ const Projects = () => {
         alt="Header Project" 
         style={{ width: '100%', height: 'auto' }} // Make the header image responsive
     />
-    <div className="explore-text">EXPLORE OUR PROJECT !</div>
+    <div className="explore-text">Explore Our Project !</div>
 </header>
 
 

@@ -8,7 +8,7 @@ const Home = () => {
       <header className="hero-section">
         <div className="hero-content">
           <img src={require('../assets/logo.png')} alt="d'snap logo" className="center-logo" /> {/* Logo di atas */}
-          <h1 className="slogan">Give Some Snaps To Your Brand!</h1>
+          <h1 className="slogan">Give Some Snaps To Your Brand !</h1>
           <p className="hero-description">
             It always seems impossible until it's done
           </p>

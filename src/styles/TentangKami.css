@@ -26,25 +26,26 @@
     font-size: 2.5em; /* Ukuran font yang sama untuk keduanya */
     font-weight: bold;
     margin-bottom: 1em;
-    color: #194c23; /* Warna yang sama */
+    color: #004b23; /* Warna yang sama */
+    font-family: 'Poppins', sans-serif;
 }
 
 .client-title{
-    font-size: 4.5em; /* Ukuran font yang sama untuk keduanya */
+    font-size: 3.9em; /* Ukuran font yang sama untuk keduanya */
     font-weight: bold;
     margin-bottom: 1em;
-    color: #194c23; /* Warna yang sama */
+    color: #004b23; /* Warna yang sama */
     text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .client-title2{
-    font-size: 2em; /* Ukuran font yang sama untuk keduanya */
+    font-size: 1.8em; /* Ukuran font yang sama untuk keduanya */
     font-weight: bold;
     margin-bottom: 1em;
-    color: #194c23; /* Warna yang sama */
+    color: #004b23; /* Warna yang sama */
     text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Century Gothic', cursive;
     margin-top: -1.5em;
     margin-bottom: 2em;
 }
@@ -58,6 +59,8 @@
     padding: 0 1em;
     max-width: 1250px; /* Membatasi lebar maksimum */
     margin: 0 auto; /* Menyentrakan grid di tengah */
+    font-family: 'Poppins', sans-serif;
+    color: #004b23;
 }
 /* Box di dalam Tentang Kami */
 .tentang-kami-box {
@@ -166,7 +169,7 @@
     padding: 2em 0;
     margin-bottom: -15em; /* Memperbesar margin bawah agar background lebih panjang */
     margin-top: 4em;
-    padding-bottom: 6em; /* Memperbesar padding bawah agar background terlihat lebih turun */
+    padding-bottom: 5em; /* Memperbesar padding bawah agar background terlihat lebih turun */
 }
 
 
@@ -205,12 +208,12 @@
     font-size: 3.5em;
     margin-bottom: 1em;
     margin-top: 0.5em;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font unik untuk gaya tulisan */
-    color: #194c23;
+    font-family: 'Poppins', sans-serif; /* Font unik untuk gaya tulisan */
+    color: #004b23;
 }
 
 .cta-button {
-    background-color: #194c23;
+    background-color: #004b23;
     color: white;
     padding: 1em 2em;
     border: none;
@@ -234,20 +237,21 @@
     .client-title {
         font-size: 2.5em; /* Ukuran font lebih kecil dari desktop */
         font-weight: bold;
-        color: #194c23;
+        color: #004b23;
         text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
-        font-family: 'Gochi Hand', cursive;
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 0.5em; /* Jarak bawah lebih kecil */
         text-align: center; /* Memastikan teks berada di tengah */
+        margin-top: -0.2em;
     }
 
     /* Subjudul "CLICK OUR CLIENT" */
     .client-title2 {
         font-size: 1.2em; /* Ukuran font tetap */
         font-weight: bold;
-        color: #194c23;
+        color: #004b23;
         text-shadow: 2px 2px 4px rgba(255, 241, 0, 0.6);
-        font-family: 'Gochi Hand', cursive;
+        font-family: 'Poppins', sans-serif;
         margin-top: -0.5em; /* Menyesuaikan jarak atas */
         margin-bottom: 1em; /* Jarak bawah tetap */
         text-align: center; /* Teks di tengah */
@@ -260,7 +264,7 @@
 
     .tentang-kami-content {
         grid-template-columns: 1fr; /* Menjadikan grid satu kolom di mobile */
-        gap: 1em; /* Mengurangi jarak antar item */
+        gap: 2.5em; /* Mengurangi jarak antar item */
         padding: 0 1em; /* Menjaga padding pada sisi */
         margin: 0 1em; /* Menambahkan margin pada sisi untuk memberi ruang */
     }
@@ -329,7 +333,7 @@
 
     .cta-text {
         font-size: 2em;
-        font-family: 'Gochi Hand', cursive;
+        font-family: 'Poppins', sans-serif;
     }
 
     .cta-button {
