@@ -81,6 +81,7 @@
     transition: background-color 0.2s ease;
   }
   
+  
   .popup-form button.submit-button:hover {
     background-color: #14591b;
   }
@@ -89,6 +90,75 @@
     height: 120px;
     resize: none;
   }
+
+  .confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk latar belakang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Box */
+.confirmation-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Text */
+.confirmation-box p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.confirm-yes,
+.confirm-no {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Yes Button */
+.confirm-yes {
+  background-color: #194c23; /* Hijau gelap */
+  color: #ffffff; /* Warna teks putih */
+}
+
+.confirm-yes:hover {
+  background-color: #14591b; /* Hijau lebih gelap */
+}
+
+/* No Button */
+.confirm-no {
+  background-color: #d9534f; /* Merah */
+  color: #ffffff; /* Warna teks putih */
+}
+
+.confirm-no:hover {
+  background-color: #c9302c; /* Merah lebih gelap */
+}
+
   
   /* Submit Button */
   .submit-button {
@@ -123,7 +193,7 @@
 .event-packages h3 {
     font-size: 2.5rem;
     color: #194c23;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
     font-family: 'Century Gothic', sans-serif;
 }
 
@@ -150,9 +220,9 @@
 
 .event-card img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover; /* Agar gambar tetap proporsional */
     border-radius: 10px;
-    margin-bottom: 1em;
 }
 
 .event-card h4 {
@@ -204,6 +274,7 @@
     background-color: #14591b;
 }
 
+
 .header-our-services {
     position: relative;
 }
@@ -212,6 +283,7 @@
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 2em;
 }
 
 .header-text {
@@ -246,6 +318,7 @@
     flex-direction: column;
     gap: 2.5em;
 }
+
 
 .button {
     display: flex;

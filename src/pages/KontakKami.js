@@ -3,8 +3,20 @@ import '../styles/KontakKami.css';
 
 const KontakKami = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [reservationType, setReservationType] = useState('');
 
-  const handleOrderClick = () => {
+  const handleOrderClick = (type) => {
+    setReservationType(type);
+    setShowConfirmation(true);
+  };
+
+  const handleCloseConfirmation = () => {
+    setShowConfirmation(false);
+  };
+
+  const handleConfirmYes = () => {
+    setShowConfirmation(false);
     setShowPopup(true);
   };
 
@@ -29,65 +41,66 @@ const KontakKami = () => {
             <h4>Small Event</h4>
             <p>Benefits</p>
             <ul>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
+              <li>Crew</li>
+              <li>Small Booth</li>
+              <li>Tools</li>
             </ul>
-            <p className="price">Start From IDR 25.000.000,00</p>
-            <button className="order-button" onClick={handleOrderClick}>Order Now</button>
+            <div className="event-footer">
+              <p className="price">Start From IDR 10.000.000,00</p>
+              <button className="order-button" onClick={() => handleOrderClick('Small Event')}>Order Now</button>
+            </div>
           </div>
 
           {/* Medium Event */}
           <div className="event-card">
-            <img src={require('../assets/medium-event.png')} alt="Medium Event" />
+            <img src={require('../assets/medium-event.jpg')} alt="Medium Event" />
             <h4>Medium Event</h4>
             <p>Benefits</p>
             <ul>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
+              <li>Crew</li>
+              <li>Medium Booth</li>
+              <li>Tools</li>
+              <li>MC</li>
             </ul>
-            <p className="price">Start From IDR 55.000.000,00</p>
-            <button className="order-button" onClick={handleOrderClick}>Order Now</button>
+            <div className="event-footer">
+              <p className="price">Start From IDR 25.000.000,00</p>
+              <button className="order-button" onClick={() => handleOrderClick('Medium Event')}>Order Now</button>
+            </div>
           </div>
 
           {/* Big Event */}
           <div className="event-card">
-            <img src={require('../assets/big-event.png')} alt="Big Event" />
+            <img src={require('../assets/big-event.jpg')} alt="Big Event" />
             <h4>Big Event</h4>
             <p>Benefits</p>
             <ul>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
-              <li>Booth</li>
+              <li>Crew</li>
+              <li>Large Booth</li>
+              <li>Tools</li>
+              <li>MC</li>
+              <li>Sales</li>
+              <li>KOL</li>
             </ul>
-            <p className="price">Start From IDR 105.000.000,00</p>
-            <button className="order-button" onClick={handleOrderClick}>Order Now</button>
+            <div className="event-footer">
+              <p className="price">Start From IDR 50.000.000,00</p>
+              <button className="order-button" onClick={() => handleOrderClick('Big Event')}>Order Now</button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* White background section for contact options */}
-      <section className="kontak-buttons">
-        <h3>Contact Us Here !</h3>
-        <div className="button-group">
-          <a href="https://wa.me/628128218017" target="_blank" rel="noopener noreferrer" className="button whatsapp">
-            <img src={require('../assets/whatsapp2.png')} alt="WhatsApp icon" />
-            <span>Click Here !</span>
-          </a>
-          <a href="mailto:agus@snapsindonesia.co.id" className="button email">
-            <img src={require('../assets/mail2.png')} alt="Email icon" />
-            <span>Click Here !</span>
-          </a>
-          <a href="https://www.instagram.com/dsnap_id" target="_blank" rel="noopener noreferrer" className="button instagram">
-            <img src={require('../assets/instagram2.png')} alt="Instagram icon" />
-            <span>Click Here !</span>
-          </a>
+      {/* Confirmation Popup */}
+      {showConfirmation && (
+        <div className="confirmation-overlay" onClick={handleCloseConfirmation}>
+          <div className="confirmation-box" onClick={(e) => e.stopPropagation()}>
+            <p>Are you sure you want to reserve the {reservationType}?</p>
+            <div className="confirmation-buttons">
+              <button className="confirm-yes" onClick={handleConfirmYes}>Yes</button>
+              <button className="confirm-no" onClick={handleCloseConfirmation}>No</button>
+            </div>
+          </div>
         </div>
-      </section>
+      )}
 
       {/* Pop-up for Order */}
       {showPopup && (
@@ -116,21 +129,40 @@ const KontakKami = () => {
               <input type="tel" id="phone" name="phone" placeholder="Enter phone number" />
 
               <button 
-              type="button" 
-              className="submit-button" 
-              onClick={() => {
-                window.open(
-                `https://wa.me/6281319171765?text=Halo%20saya%20tertarik%20untuk%20memesan%20event%20melalui%20Snapsindo!`,
-                "_blank"
-                );
-              }}
-            >
-              Order Now !
-            </button>
+                type="button" 
+                className="submit-button" 
+                onClick={() => {
+                  window.open(
+                    `https://wa.me/6281319171765?text=Halo%20saya%20tertarik%20untuk%20memesan%20event%20${reservationType}%20melalui%20Snapsindo!`,
+                    "_blank"
+                  );
+                }}
+              >
+                Order Now !
+              </button>
             </form>
           </div>
         </div>
       )}
+
+      {/* White background section for contact options */}
+      <section className="kontak-buttons">
+        <h3>Contact Us Here !</h3>
+        <div className="button-group">
+          <a href="https://wa.me/628128218017" target="_blank" rel="noopener noreferrer" className="button whatsapp">
+            <img src={require('../assets/whatsapp2.png')} alt="WhatsApp icon" />
+            <span>Click Here !</span>
+          </a>
+          <a href="mailto:agus@snapsindonesia.co.id" className="button email">
+            <img src={require('../assets/mail2.png')} alt="Email icon" />
+            <span>Click Here !</span>
+          </a>
+          <a href="https://www.instagram.com/dsnap_id" target="_blank" rel="noopener noreferrer" className="button instagram">
+            <img src={require('../assets/instagram2.png')} alt="Instagram icon" />
+            <span>Click Here !</span>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
