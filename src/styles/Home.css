@@ -8,6 +8,26 @@ body {
   padding: 0;
 }
 
+.profile-icon-container {
+  position: absolute;
+  top: 110px; /* Atur jarak dari atas */
+  right: 20px; /* Atur jarak dari kanan */
+  z-index: 10; /* Pastikan berada di atas elemen lainnya */
+}
+
+.profile-icon {
+  width: 40px; /* Ukuran logo lebih kecil */
+  height: 40px; /* Pastikan proporsi tetap */
+  border-radius: 50%; /* Bentuk lingkaran */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+}
+
+.profile-icon:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+  transition: transform 0.3s ease-in-out;
+}
+
 .hero-section {
   display: flex;
   justify-content: center;

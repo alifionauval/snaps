@@ -1,0 +1,307 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-sidebar {
+  background-color: #004d00;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-logo {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.admin-menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.admin-menu li {
+  margin: 15px 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-link.active {
+  background-color: #006600;
+}
+
+.menu-link:hover {
+  background-color: #006600;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto; /* Jika konten tinggi, tambahkan scroll */
+}
+
+.admin-title {
+  color: #004d00;
+  margin-bottom: 20px;
+}
+
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.reservation-table th,
+.reservation-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.reservation-table th {
+  background-color: #f1f1f1;
+}
+
+.reservation-table td {
+  vertical-align: top;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #00b300;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+}
+
+.admin-title {
+  color: #004d00;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.edit-reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+.date-picker-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.date-picker-button {
+  background-color: #00cc44;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.date-picker-button:hover {
+  background-color: #009933;
+}
+
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.reservation-table th,
+.reservation-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.reservation-table th {
+  background-color: #f1f1f1;
+}
+
+.reservation-table td {
+  vertical-align: top;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #00b300;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+}
+
+.add-button {
+  background-color: #00cc44;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background-color: #009933;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px; /* Increased modal width */
+  max-width: 90%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.save-button {
+  background-color: #00cc44;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #009933;
+}
+
+.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #cc0000;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.logout-logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Optional: Add hover effect to logout logo */
+.logout-button:hover .logout-logo {
+  opacity: 0.7;
+}

@@ -23,7 +23,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/tentang-kami">About Us</Link></li>
         <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/kontak-kami">Contact Us</Link></li>
+        <li><Link to="/kontak-kami">Reservation</Link></li>
       </ul>
     </nav>
   );

@@ -16,6 +16,11 @@ const Home = () => {
             - Nelson Mandela
           </p>
         </div>
+        <div className="profile-icon-container">
+          <Link to="/login">
+            <img src={require('../assets/profile-icon.png')} alt="Admin Profile" className="profile-icon" />
+          </Link>
+        </div>
       </header>
 
       <section className="section-info">
