@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.552aa4d9.css",
-    "main.js": "/static/js/main.f9acad40.js",
-    "static/js/453.7cc6f8de.chunk.js": "/static/js/453.7cc6f8de.chunk.js",
+    "main.css": "/static/css/main.82fd00c5.css",
+    "main.js": "/static/js/main.f1fb0313.js",
+    "static/js/453.a6be28be.chunk.js": "/static/js/453.a6be28be.chunk.js",
     "static/media/bigproject3.jpg": "/static/media/bigproject3.8a778600b8fae493daae.jpg",
+    "static/media/medium-event.jpg": "/static/media/medium-event.8a778600b8fae493daae.jpg",
     "static/media/Header_AboutUs.png": "/static/media/Header_AboutUs.0cf4974ee10bef3d4b92.png",
     "static/media/projectslide5.jpg": "/static/media/projectslide5.4ca03e4c7b9e21b0a19b.jpg",
     "static/media/bigproject1.jpg": "/static/media/bigproject1.c4e8c3c1d04805db08e8.jpg",
@@ -47,6 +48,7 @@
     "static/media/event-samsung-11.png": "/static/media/event-samsung-11.d3cbf3f5b91c5edd338b.png",
     "static/media/event-samsung-28.png": "/static/media/event-samsung-28.e396f488bfd3018ae8b2.png",
     "static/media/projectslide12.png": "/static/media/projectslide12.83c245d784b9806327f0.png",
+    "static/media/small-event.png": "/static/media/small-event.83c245d784b9806327f0.png",
     "static/media/event-goodday-6.png": "/static/media/event-goodday-6.449192a145b6b08ea918.png",
     "static/media/event-samsung-4.png": "/static/media/event-samsung-4.341828d136ae268b4cc0.png",
     "static/media/event-traveloka-1.png": "/static/media/event-traveloka-1.e507a15bdf7b3036c36e.png",
@@ -117,6 +119,7 @@
     "static/media/Idea.png": "/static/media/Idea.065f0aa7d6f407d58765.png",
     "static/media/logo.png": "/static/media/logo.f6792b1e620639f1c499.png",
     "static/media/Header_Dekstop.png": "/static/media/Header_Dekstop.737b5afcd56fc80f08be.png",
+    "static/media/big-event.jpg": "/static/media/big-event.69934fe86365274b6efd.jpg",
     "static/media/bigproject2.jpg": "/static/media/bigproject2.69934fe86365274b6efd.jpg",
     "static/media/goodday-logo.png": "/static/media/goodday-logo.01cc6081bd2ee239c98d.png",
     "static/media/Header_Mobile.png": "/static/media/Header_Mobile.067d8c826cbe57e998fe.png",
@@ -136,20 +139,23 @@
     "static/media/header-our-services-mobile.png": "/static/media/header-our-services-mobile.01bbd4a6470d6db35d5a.png",
     "static/media/mandiri-logo.png": "/static/media/mandiri-logo.fd0d3475404559540ffa.png",
     "static/media/kapal-api-logo.png": "/static/media/kapal-api-logo.a05ef2c06c105e1b8b96.png",
+    "static/media/LogoutLogo.png": "/static/media/LogoutLogo.fb88a840bdcf77b869cd.png",
     "static/media/instagram.png": "/static/media/instagram.d9afb7ca001821418e12.png",
+    "static/media/profile-icon.png": "/static/media/profile-icon.ee62cfc1af63a40f7e5d.png",
     "static/media/kanzler-logo.png": "/static/media/kanzler-logo.3427b76acaff08630d3b.png",
+    "static/media/BackLogo.png": "/static/media/BackLogo.75d4a877c142e5f5c7c0.png",
     "static/media/implora-logo.png": "/static/media/implora-logo.56b0b16c0b6b963ebfb9.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.552aa4d9.css.map": "/static/css/main.552aa4d9.css.map",
-    "main.f9acad40.js.map": "/static/js/main.f9acad40.js.map",
-    "453.7cc6f8de.chunk.js.map": "/static/js/453.7cc6f8de.chunk.js.map"
+    "main.82fd00c5.css.map": "/static/css/main.82fd00c5.css.map",
+    "main.f1fb0313.js.map": "/static/js/main.f1fb0313.js.map",
+    "453.a6be28be.chunk.js.map": "/static/js/453.a6be28be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.552aa4d9.css",
-    "static/js/main.f9acad40.js"
+    "static/css/main.82fd00c5.css",
+    "static/js/main.f1fb0313.js"
   ]
 }
